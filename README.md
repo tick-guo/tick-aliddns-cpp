@@ -1,5 +1,6 @@
 ### 功能
-动态更新DDNS , cpp版本
+1. 动态更新DDNS , cpp版本
+2. 第一次启动后,自动产生配置文件模板
 
 ### 必须安装为服务,后台运行
 ```
@@ -15,6 +16,6 @@ aliddns_cpp.exe delete           delete the service: AliddnsAutoUpdate
 aliddns_cpp.exe start            start the service: AliddnsAutoUpdate
 ```
 ### 编译软件
-vs2022
+1. vs2022
 
 
