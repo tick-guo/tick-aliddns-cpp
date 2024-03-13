@@ -1,0 +1,13 @@
+{
+	"AccessKeyId" : "xxx", //将accessKeyId改成自己的accessKeyId
+	"AccessSecret" : "xxx", //将accessSecret改成自己的accessSecret
+	"Domain" : "xxx.fun", //你的主域名
+	"Ip4Url" : "http://4.ipw.cn", //探测本机公共ipv4的服务器,可以不配置,有内部默认值,默认服务器挂了,可以设置新的服务器
+	"Ip6Url" : "https://www.baidu.com", //探测本机公共ipv6的服务器,可以不配置,有内部默认值,默认服务器挂了,可以设置新的服务器
+	"Ipv4Flag" : 0, //是否开启ipv4 ddns解析,1为开启，0为关闭
+	"Ipv6Flag" : 1, //是否开启ipv6 ddns解析,1为开启，0为关闭
+	"LogLevel" : 1, //log级别, 默认0: 少量log, 1: 更详细的log
+	"NameIpv4" : "tb4", //要进行ipv4 ddns解析的子域名
+	"NameIpv6" : "tb6", //要进行ipv6 ddns解析的子域名
+	"TimeInterval" : 20 //检测ip变化的时间间隔,默认30秒
+}
