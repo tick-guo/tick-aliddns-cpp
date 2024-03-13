@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\libtest\lib589.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\libtest\first.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\libtest\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\libtest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EBD36D67-0CF4-3565-9787-74A3AA654324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{997C7C51-DFDC-3287-B0DC-A247EF7EC1FF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

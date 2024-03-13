@@ -1,0 +1,7 @@
+aliddns v2.7 build 20230913 by tick_guo
+
+v2.8 build 20240313
+ipv6 采用极速方式获取 : curl_easy_getinfo(curl, CURLINFO_LOCAL_IP, &ip)
+
+
+

@@ -1,0 +1,1105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A031E5F-55AA-3688-9E05-FD12EF196D89}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>testdeps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1 -BE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build --check-stamp-file E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1 -BE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build --check-stamp-file E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1 -BE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build --check-stamp-file E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1 -BE:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build --check-stamp-file E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\ZERO_CHECK.vcxproj">
+      <Project>{91296D11-92AB-3105-AB2F-7E7A9B562482}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\chkhostname.vcxproj">
+      <Project>{6EEB9499-0068-3C7F-8D00-2DEB23893329}</Project>
+      <Name>chkhostname</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\disabled.vcxproj">
+      <Project>{5341EE11-66CF-3581-B6A0-C48F1997EEF0}</Project>
+      <Name>disabled</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\fake_ntlm.vcxproj">
+      <Project>{0A738D97-73A5-3CF7-9B81-E756E69684D4}</Project>
+      <Name>fake_ntlm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\getpart.vcxproj">
+      <Project>{05D0E74A-F707-3C10-BF0A-8526A98B2848}</Project>
+      <Name>getpart</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1156.vcxproj">
+      <Project>{6EBF1E12-03A8-3BF9-AA2D-4DA8680C5411}</Project>
+      <Name>lib1156</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1301.vcxproj">
+      <Project>{1B2C3D04-7337-301D-B12E-23A5F6E0C0CB}</Project>
+      <Name>lib1301</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1500.vcxproj">
+      <Project>{A7822A9F-BA98-3059-8D52-85A32F68FBB0}</Project>
+      <Name>lib1500</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1501.vcxproj">
+      <Project>{1AB0BC45-D713-33FD-A70B-864220314672}</Project>
+      <Name>lib1501</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1502.vcxproj">
+      <Project>{294A20F6-11B8-3091-B845-859E5C10990E}</Project>
+      <Name>lib1502</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1503.vcxproj">
+      <Project>{ABBD76C6-9203-380A-95DC-24821AD8CF46}</Project>
+      <Name>lib1503</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1504.vcxproj">
+      <Project>{2BA32544-AAE1-3055-B460-81BE97C8BD52}</Project>
+      <Name>lib1504</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1505.vcxproj">
+      <Project>{24D3D1E8-20BD-30F1-A41F-52E3EAC17BB0}</Project>
+      <Name>lib1505</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1506.vcxproj">
+      <Project>{D7680E3F-E56A-30FB-8D25-CBAAFEA03664}</Project>
+      <Name>lib1506</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1507.vcxproj">
+      <Project>{CAB12AE8-9A34-3C4F-B448-C3FE065E7716}</Project>
+      <Name>lib1507</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1508.vcxproj">
+      <Project>{01D41CC8-7452-39BB-A8AF-B4DF0FBA53B4}</Project>
+      <Name>lib1508</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1509.vcxproj">
+      <Project>{1F6FDCCE-B42A-3EAD-84B4-23D20EA076A6}</Project>
+      <Name>lib1509</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1510.vcxproj">
+      <Project>{4AC057AE-A012-3088-9439-353A776BB724}</Project>
+      <Name>lib1510</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1511.vcxproj">
+      <Project>{8E61226A-BA75-388C-A9F7-9247A07A2F71}</Project>
+      <Name>lib1511</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1512.vcxproj">
+      <Project>{DFFB63DD-F942-313F-8041-27B2433431C1}</Project>
+      <Name>lib1512</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1513.vcxproj">
+      <Project>{4D64AA65-F9DC-3C4A-AF26-777CA3848DED}</Project>
+      <Name>lib1513</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1514.vcxproj">
+      <Project>{7C5490C2-5478-3DC1-BB1F-4D9610F79C97}</Project>
+      <Name>lib1514</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1515.vcxproj">
+      <Project>{A41DB754-B71B-37B0-92F1-8C6950C29DD5}</Project>
+      <Name>lib1515</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1517.vcxproj">
+      <Project>{CE497FED-55BB-3C6A-B813-165C3FF90E77}</Project>
+      <Name>lib1517</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1518.vcxproj">
+      <Project>{C054EB8F-BC42-3738-87F6-7D628F13E7C9}</Project>
+      <Name>lib1518</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1520.vcxproj">
+      <Project>{2D11DEEF-420B-32A3-B560-AEF47BFEC148}</Project>
+      <Name>lib1520</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1521.vcxproj">
+      <Project>{86C05FEF-0FD4-3880-8A8E-D3C67213CB6B}</Project>
+      <Name>lib1521</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1522.vcxproj">
+      <Project>{6F5399ED-5E55-3CC2-BE26-B945D7889384}</Project>
+      <Name>lib1522</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1523.vcxproj">
+      <Project>{9EEADBCD-2CB7-3991-A426-04C49E711AB9}</Project>
+      <Name>lib1523</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1525.vcxproj">
+      <Project>{D1D7C8E0-DC7D-3AE7-A752-25F3A4C9DAA1}</Project>
+      <Name>lib1525</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1526.vcxproj">
+      <Project>{247EAFFF-26B2-38B2-9251-5BD8E1D483AF}</Project>
+      <Name>lib1526</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1527.vcxproj">
+      <Project>{914FAF90-EAE6-3B20-8818-29BF86A96569}</Project>
+      <Name>lib1527</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1528.vcxproj">
+      <Project>{005192BF-8429-3363-A9DF-384A43E6D16D}</Project>
+      <Name>lib1528</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1529.vcxproj">
+      <Project>{8D599369-EDD8-398A-A100-E8133034AEDA}</Project>
+      <Name>lib1529</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1530.vcxproj">
+      <Project>{63B5B84D-9C46-3F79-8F18-5ABF213EF28B}</Project>
+      <Name>lib1530</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1531.vcxproj">
+      <Project>{DA09122E-C131-39C1-9303-851C8719FB36}</Project>
+      <Name>lib1531</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1532.vcxproj">
+      <Project>{BEBA8C72-E6CB-3288-B2B2-C9F563153E18}</Project>
+      <Name>lib1532</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1533.vcxproj">
+      <Project>{DA047958-BFFE-3355-863B-D29F7BA06DB8}</Project>
+      <Name>lib1533</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1534.vcxproj">
+      <Project>{DEF7465E-0389-3A10-B82E-2713DAC9E7A9}</Project>
+      <Name>lib1534</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1535.vcxproj">
+      <Project>{5B2E4817-D4DB-32A0-93AA-3E61A046C875}</Project>
+      <Name>lib1535</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1536.vcxproj">
+      <Project>{497162C6-ED6C-376C-B2A2-906F3DBC9D04}</Project>
+      <Name>lib1536</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1537.vcxproj">
+      <Project>{96499E30-3F8B-34A2-855D-91A3370430B4}</Project>
+      <Name>lib1537</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1538.vcxproj">
+      <Project>{A7C41EFF-1231-3A9D-A7DC-3C105DF3E174}</Project>
+      <Name>lib1538</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1539.vcxproj">
+      <Project>{9315B218-6E8F-3842-837D-50B7298EC4AD}</Project>
+      <Name>lib1539</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1540.vcxproj">
+      <Project>{0B33B579-41C8-3C1D-98E3-FDD63502AE8C}</Project>
+      <Name>lib1540</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1542.vcxproj">
+      <Project>{CD09905B-774D-3BD7-958E-A8683FF6FC9F}</Project>
+      <Name>lib1542</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1543.vcxproj">
+      <Project>{46E1D4B0-E4C4-355E-A1CD-A11151AA513C}</Project>
+      <Name>lib1543</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1550.vcxproj">
+      <Project>{CEF5F3BC-0C60-3BEB-AB87-F0DD1BD03300}</Project>
+      <Name>lib1550</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1551.vcxproj">
+      <Project>{D828E53F-B7FC-383B-B742-E13A6560C98E}</Project>
+      <Name>lib1551</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1552.vcxproj">
+      <Project>{8546D70F-D0AE-37D4-B856-19EB904EF26C}</Project>
+      <Name>lib1552</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1553.vcxproj">
+      <Project>{F8BC8574-A379-3410-BD5E-9AEE80C115FE}</Project>
+      <Name>lib1553</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1554.vcxproj">
+      <Project>{8BB23875-98ED-3F69-97F9-EDBA200A2547}</Project>
+      <Name>lib1554</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1555.vcxproj">
+      <Project>{4FF4BB70-9B51-3BF7-837D-EE54CDF460C1}</Project>
+      <Name>lib1555</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1556.vcxproj">
+      <Project>{3401BCBA-8FC0-38EA-9244-96607CC74FE5}</Project>
+      <Name>lib1556</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1557.vcxproj">
+      <Project>{D8D1936C-BA0C-386F-B77E-56C357E82B40}</Project>
+      <Name>lib1557</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1558.vcxproj">
+      <Project>{BD729708-0688-3CF4-9A4F-A1E218FD0E97}</Project>
+      <Name>lib1558</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1559.vcxproj">
+      <Project>{4A3EAF93-1759-37C0-997F-B8B740996051}</Project>
+      <Name>lib1559</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1560.vcxproj">
+      <Project>{ADC8DDF8-D013-3C6D-9245-193D1DCF1118}</Project>
+      <Name>lib1560</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1564.vcxproj">
+      <Project>{66F4EC6E-E1AB-3A9C-893B-5BB0E9BA08E6}</Project>
+      <Name>lib1564</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1565.vcxproj">
+      <Project>{0ADE3859-802E-32D7-B73A-37B61E5EE167}</Project>
+      <Name>lib1565</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1567.vcxproj">
+      <Project>{70A7D0AD-1ABF-3B87-BDDB-76E02F6AC1A3}</Project>
+      <Name>lib1567</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1568.vcxproj">
+      <Project>{8B21DE41-2513-3AA8-A5AA-AC91962EB6B0}</Project>
+      <Name>lib1568</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1569.vcxproj">
+      <Project>{EE5F15E0-DC94-3636-AA50-E23E68D085DB}</Project>
+      <Name>lib1569</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1591.vcxproj">
+      <Project>{3AB4C1E7-66AE-38E5-9168-DC7D0A76C16F}</Project>
+      <Name>lib1591</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1592.vcxproj">
+      <Project>{B95672A6-510A-3F40-B395-94D152140E2D}</Project>
+      <Name>lib1592</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1593.vcxproj">
+      <Project>{6C06A7B9-170B-3DE8-8B67-7D232C53371C}</Project>
+      <Name>lib1593</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1594.vcxproj">
+      <Project>{EAAE47A0-8B5C-337B-B409-F6ECA591C005}</Project>
+      <Name>lib1594</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1596.vcxproj">
+      <Project>{D8250D27-4E7B-3E2E-84C9-5E35A20C3F64}</Project>
+      <Name>lib1596</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1597.vcxproj">
+      <Project>{F9267BBC-6B84-3AD0-B550-BA60BF331F64}</Project>
+      <Name>lib1597</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1662.vcxproj">
+      <Project>{4596EB1A-9374-3729-872B-B499A88AE330}</Project>
+      <Name>lib1662</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1903.vcxproj">
+      <Project>{6FE92EFF-784C-3002-87A8-914B3425AFBF}</Project>
+      <Name>lib1903</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1905.vcxproj">
+      <Project>{01CEF6F0-60DB-31C4-8A35-CA3E3ED11A15}</Project>
+      <Name>lib1905</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1906.vcxproj">
+      <Project>{A0F6F911-1A45-39B9-8545-F31D9240E287}</Project>
+      <Name>lib1906</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1907.vcxproj">
+      <Project>{4327C2FF-45F6-3486-9286-C154E1C1B437}</Project>
+      <Name>lib1907</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1908.vcxproj">
+      <Project>{F777DC07-E11C-30E1-9D18-E3E4EF585A79}</Project>
+      <Name>lib1908</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1910.vcxproj">
+      <Project>{82AB3B50-3B1F-3D6B-BC2D-08BD73D2F0E3}</Project>
+      <Name>lib1910</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1911.vcxproj">
+      <Project>{22B9DE22-A394-33C4-9EB0-435957063464}</Project>
+      <Name>lib1911</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1912.vcxproj">
+      <Project>{99C5BBA4-3290-3977-95B7-D0117EAAB1B4}</Project>
+      <Name>lib1912</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1913.vcxproj">
+      <Project>{1B7D6861-44D8-3B0A-B1B0-BBE67AD49EB8}</Project>
+      <Name>lib1913</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1915.vcxproj">
+      <Project>{2C4E7437-A06E-3F6E-86DD-1825F278354C}</Project>
+      <Name>lib1915</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1916.vcxproj">
+      <Project>{8B8B36D7-5738-3DF8-A2D2-9ABA63983AC9}</Project>
+      <Name>lib1916</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1917.vcxproj">
+      <Project>{3A1846B2-A6A5-3E79-B948-7274CEBAB92B}</Project>
+      <Name>lib1917</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1918.vcxproj">
+      <Project>{BD5C46CA-CB9B-3CEB-9079-B0327D0DD1C4}</Project>
+      <Name>lib1918</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1919.vcxproj">
+      <Project>{7BC11FE7-E78A-3214-9C38-7C990D16A1F9}</Project>
+      <Name>lib1919</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1933.vcxproj">
+      <Project>{81E88C47-A048-3060-B0E0-79C552753E84}</Project>
+      <Name>lib1933</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1934.vcxproj">
+      <Project>{E215D733-3A91-3C8A-9264-E94C4B99476A}</Project>
+      <Name>lib1934</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1935.vcxproj">
+      <Project>{5E7BED04-F93A-3771-AE9C-D8EFFA801E73}</Project>
+      <Name>lib1935</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1936.vcxproj">
+      <Project>{CE9B7057-1C8B-3FAF-B9D3-C3C84985099E}</Project>
+      <Name>lib1936</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1937.vcxproj">
+      <Project>{039D9DFD-28C7-38CC-B6C0-E2B549B92F98}</Project>
+      <Name>lib1937</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1938.vcxproj">
+      <Project>{009246D6-4955-38E6-9138-301CAD84BBC2}</Project>
+      <Name>lib1938</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1939.vcxproj">
+      <Project>{F0DF8739-70E2-39A0-91E0-7DFB3DF0A347}</Project>
+      <Name>lib1939</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1940.vcxproj">
+      <Project>{39F62EEB-3D80-336D-9029-59C2A51A0959}</Project>
+      <Name>lib1940</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1945.vcxproj">
+      <Project>{23BB3438-FA5A-33E2-B9F5-8113C9D94048}</Project>
+      <Name>lib1945</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1946.vcxproj">
+      <Project>{A31B55D5-BDE9-3D5F-86DC-6DE00B3CE838}</Project>
+      <Name>lib1946</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1947.vcxproj">
+      <Project>{53097312-16E1-3F98-8B7B-2B1846D31EC0}</Project>
+      <Name>lib1947</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1948.vcxproj">
+      <Project>{17FA0F99-D843-3730-B5C4-D22C34529144}</Project>
+      <Name>lib1948</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1955.vcxproj">
+      <Project>{300447CF-C088-3708-926B-8A46B3C92583}</Project>
+      <Name>lib1955</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1956.vcxproj">
+      <Project>{0039C210-0860-313C-8382-32AA5B8EEBAF}</Project>
+      <Name>lib1956</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1957.vcxproj">
+      <Project>{8DBA3041-CB30-3CA3-989A-95035A30BAC5}</Project>
+      <Name>lib1957</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1958.vcxproj">
+      <Project>{7C775707-9614-3066-AD8D-470B6899C429}</Project>
+      <Name>lib1958</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1959.vcxproj">
+      <Project>{85688045-1F54-3734-BE9C-426A2CC55409}</Project>
+      <Name>lib1959</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1960.vcxproj">
+      <Project>{95FEE70B-7780-34E0-B202-F1B6436C2618}</Project>
+      <Name>lib1960</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1970.vcxproj">
+      <Project>{B7E8F580-36D6-33F9-A82A-7A4E9C5E0268}</Project>
+      <Name>lib1970</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1971.vcxproj">
+      <Project>{442E8BEE-B93F-3BF6-847E-C5B1D5901928}</Project>
+      <Name>lib1971</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1972.vcxproj">
+      <Project>{13EE7120-DF70-3AD8-8C7D-A171C0C3AC09}</Project>
+      <Name>lib1972</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1973.vcxproj">
+      <Project>{DEB9F3AF-4DFF-376F-B4CB-913562DA162C}</Project>
+      <Name>lib1973</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1974.vcxproj">
+      <Project>{3C119193-C777-3FDE-BD3D-B7311E15AD6D}</Project>
+      <Name>lib1974</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib1975.vcxproj">
+      <Project>{C3356E77-5DBC-3559-ADA2-1CEB978FA1EA}</Project>
+      <Name>lib1975</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2301.vcxproj">
+      <Project>{66BA7F0F-4A1D-39D1-B10C-B8FA38AFA36F}</Project>
+      <Name>lib2301</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2302.vcxproj">
+      <Project>{0E61C16B-3B96-3D37-B068-970415B52BA2}</Project>
+      <Name>lib2302</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2304.vcxproj">
+      <Project>{95A7644C-0F5B-3F87-80D9-D43857952845}</Project>
+      <Name>lib2304</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2305.vcxproj">
+      <Project>{57C50EAB-B07A-3E12-A991-37D4DB1BA360}</Project>
+      <Name>lib2305</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2306.vcxproj">
+      <Project>{026EC9B8-2991-3E72-8557-B1013D0C56DC}</Project>
+      <Name>lib2306</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2402.vcxproj">
+      <Project>{252BE103-553F-3A4C-9699-E61B9F48EE64}</Project>
+      <Name>lib2402</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2404.vcxproj">
+      <Project>{FE816B0F-128C-3F55-8FEC-E7507E241DE3}</Project>
+      <Name>lib2404</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib2502.vcxproj">
+      <Project>{F29B85B2-55B5-335D-B864-B53C90A0C5FA}</Project>
+      <Name>lib2502</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib3010.vcxproj">
+      <Project>{1BA14800-E4C0-3BFC-A79A-4D36903086FC}</Project>
+      <Name>lib3010</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib3025.vcxproj">
+      <Project>{B862DFDB-BC33-3BC5-A797-DE6089657AFF}</Project>
+      <Name>lib3025</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib3026.vcxproj">
+      <Project>{2FEF7C46-2560-38EA-8555-FE01708D35D4}</Project>
+      <Name>lib3026</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib3027.vcxproj">
+      <Project>{2ED44FC4-61D3-332E-8268-CAF8739FB701}</Project>
+      <Name>lib3027</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib3100.vcxproj">
+      <Project>{9BA85B00-BE7A-3808-BD00-7A8162E9F557}</Project>
+      <Name>lib3100</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib3101.vcxproj">
+      <Project>{D147A295-AE5A-3C7A-A675-91B6B859730B}</Project>
+      <Name>lib3101</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib500.vcxproj">
+      <Project>{E5F59DF5-75B7-35E4-B57F-210FFA2A9D82}</Project>
+      <Name>lib500</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib501.vcxproj">
+      <Project>{36DDA16B-0C90-3C97-97B7-52BD2CAFC30D}</Project>
+      <Name>lib501</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib502.vcxproj">
+      <Project>{DEDB42A4-16EA-3859-B263-9B20836900B8}</Project>
+      <Name>lib502</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib503.vcxproj">
+      <Project>{00F7B0AC-EB5D-353F-85D6-9595CF944056}</Project>
+      <Name>lib503</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib504.vcxproj">
+      <Project>{6A33BBF4-19B4-36BC-AEAA-1014D7A81AD3}</Project>
+      <Name>lib504</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib505.vcxproj">
+      <Project>{129503F8-A1A7-358A-8486-68E9960A89D0}</Project>
+      <Name>lib505</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib506.vcxproj">
+      <Project>{3F417DBF-0AAA-37F9-9B64-7B6888E7442F}</Project>
+      <Name>lib506</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib507.vcxproj">
+      <Project>{310C37DE-DB14-3C21-B945-74676CFECB15}</Project>
+      <Name>lib507</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib508.vcxproj">
+      <Project>{59CC1A44-1787-3E0F-BCE5-F62B71B5CE03}</Project>
+      <Name>lib508</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib509.vcxproj">
+      <Project>{2CA580F2-6156-3463-99AE-13E293663818}</Project>
+      <Name>lib509</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib510.vcxproj">
+      <Project>{A001EB07-715E-3A5B-8130-C094F7AD190C}</Project>
+      <Name>lib510</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib511.vcxproj">
+      <Project>{611EC693-F5EC-3EFF-8093-4AA8E68901FE}</Project>
+      <Name>lib511</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib512.vcxproj">
+      <Project>{18AA33B9-E21B-3D64-BBB2-115559902BFC}</Project>
+      <Name>lib512</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib513.vcxproj">
+      <Project>{F53FDA39-8D3F-3F4F-808D-80DE6E1810DA}</Project>
+      <Name>lib513</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib514.vcxproj">
+      <Project>{A390C890-016B-39C5-9C61-8328F62017BB}</Project>
+      <Name>lib514</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib515.vcxproj">
+      <Project>{97DF847B-8306-3147-A0B8-A9705A127751}</Project>
+      <Name>lib515</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib516.vcxproj">
+      <Project>{E2B54B7A-844F-35A9-8288-B40D84B300CD}</Project>
+      <Name>lib516</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib517.vcxproj">
+      <Project>{3BF9631B-E9D6-3922-8CBC-79DDDAA2EFD0}</Project>
+      <Name>lib517</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib518.vcxproj">
+      <Project>{A571E4E3-7204-3BEA-8BB1-CDE5C3DC50CD}</Project>
+      <Name>lib518</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib519.vcxproj">
+      <Project>{2EBE1DBF-522E-35E9-B466-5AB610DDD9DF}</Project>
+      <Name>lib519</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib520.vcxproj">
+      <Project>{A696B74D-61F5-3A7C-96EF-1A6BE26A879A}</Project>
+      <Name>lib520</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib521.vcxproj">
+      <Project>{2AB6DE96-0B04-33C2-BDFA-E41AC8C0E9BD}</Project>
+      <Name>lib521</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib523.vcxproj">
+      <Project>{3A5BB428-0445-38CF-9AD4-455B23BC6985}</Project>
+      <Name>lib523</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib524.vcxproj">
+      <Project>{410EAAAA-ECCB-3AD4-834D-CDF5EB99458B}</Project>
+      <Name>lib524</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib525.vcxproj">
+      <Project>{37D3A326-F8F9-303B-8825-F230CB4FF121}</Project>
+      <Name>lib525</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib526.vcxproj">
+      <Project>{2AACD0AE-10F1-3470-9C82-FF8596303E52}</Project>
+      <Name>lib526</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib527.vcxproj">
+      <Project>{2D0A5229-0F69-3726-91EB-522B5E8640BD}</Project>
+      <Name>lib527</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib529.vcxproj">
+      <Project>{B7818D13-BE5F-3EC3-991C-36ACE2038FF6}</Project>
+      <Name>lib529</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib530.vcxproj">
+      <Project>{6A75C891-C7A4-3111-9A7B-0101078EFC02}</Project>
+      <Name>lib530</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib532.vcxproj">
+      <Project>{A7D604E7-45E1-377F-AED2-7C618CB10A8D}</Project>
+      <Name>lib532</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib533.vcxproj">
+      <Project>{66CAC4AC-F899-3DAE-9526-6C8CD1A4AEB4}</Project>
+      <Name>lib533</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib537.vcxproj">
+      <Project>{EFEB5AF8-1FEF-36C5-BAC2-1EC518089C45}</Project>
+      <Name>lib537</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib539.vcxproj">
+      <Project>{4E20EF53-3F0F-33DB-82F4-F76947AC599A}</Project>
+      <Name>lib539</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib540.vcxproj">
+      <Project>{04692782-B268-3F63-B47D-61E0121A088B}</Project>
+      <Name>lib540</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib541.vcxproj">
+      <Project>{001440FB-4CCD-3E8F-9C0B-7E5F14FB4686}</Project>
+      <Name>lib541</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib542.vcxproj">
+      <Project>{E44398B7-3E29-3D22-B7BE-CBD1AE06A17E}</Project>
+      <Name>lib542</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib543.vcxproj">
+      <Project>{FA919083-6435-3F8C-9708-15CCE305FD37}</Project>
+      <Name>lib543</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib544.vcxproj">
+      <Project>{7C0BE66C-9D90-3FA8-BC84-0F1269C14F10}</Project>
+      <Name>lib544</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib545.vcxproj">
+      <Project>{1189F7E0-A500-3957-9118-AFCF06F9A9AC}</Project>
+      <Name>lib545</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib547.vcxproj">
+      <Project>{D693E791-3F00-39BE-8610-6F12294CBF9F}</Project>
+      <Name>lib547</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib548.vcxproj">
+      <Project>{02E18AD7-18BA-3574-B99C-B3CA448C7CD6}</Project>
+      <Name>lib548</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib549.vcxproj">
+      <Project>{7B13B3F9-7B1A-3431-A17E-C0E8BCC3DB96}</Project>
+      <Name>lib549</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib552.vcxproj">
+      <Project>{BAC97E05-9243-3A0B-A95B-101CDF40D16B}</Project>
+      <Name>lib552</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib553.vcxproj">
+      <Project>{9B0C2BCC-E868-33DB-8EFB-C958FCD65A35}</Project>
+      <Name>lib553</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib554.vcxproj">
+      <Project>{CB127B7C-4ACE-3114-B95D-B2A5A7C01588}</Project>
+      <Name>lib554</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib555.vcxproj">
+      <Project>{4493DFD4-6893-3D6F-895C-B0DAEDCD298A}</Project>
+      <Name>lib555</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib556.vcxproj">
+      <Project>{7863F78E-3B38-3BD7-862E-D6E1DC3AE805}</Project>
+      <Name>lib556</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib557.vcxproj">
+      <Project>{1AD9C945-9A33-38AE-BCCD-FC3B7EE8CF82}</Project>
+      <Name>lib557</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib558.vcxproj">
+      <Project>{B198F8B0-0866-30BD-A30B-68CC51E07F0C}</Project>
+      <Name>lib558</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib559.vcxproj">
+      <Project>{277755B3-D2FA-316D-A435-79EEB48A286E}</Project>
+      <Name>lib559</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib560.vcxproj">
+      <Project>{377FB6DD-C739-3271-896E-9B61E9C868EE}</Project>
+      <Name>lib560</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib562.vcxproj">
+      <Project>{BE4826B2-7FAC-3285-8B30-9FBF3013A297}</Project>
+      <Name>lib562</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib564.vcxproj">
+      <Project>{5A3BF2EB-FBEA-3044-9C34-AD210D936429}</Project>
+      <Name>lib564</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib565.vcxproj">
+      <Project>{28A4E724-A7EF-3C6A-8FB9-DB6E9B7DD03A}</Project>
+      <Name>lib565</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib566.vcxproj">
+      <Project>{1B2B2691-01B4-3A3C-BE51-12204C06549F}</Project>
+      <Name>lib566</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib567.vcxproj">
+      <Project>{00E90B6E-C118-3034-82D3-F51C79D4201F}</Project>
+      <Name>lib567</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib568.vcxproj">
+      <Project>{7D6EC350-1753-3988-8691-0FCCFE557121}</Project>
+      <Name>lib568</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib569.vcxproj">
+      <Project>{A186E59F-4ACA-32E5-BD3A-956A29BC214B}</Project>
+      <Name>lib569</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib570.vcxproj">
+      <Project>{0096E6CA-1AF2-3CB5-8D3C-550345A2CCF7}</Project>
+      <Name>lib570</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib571.vcxproj">
+      <Project>{0B176D8E-4113-34D1-88EB-C02DD26CA597}</Project>
+      <Name>lib571</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib572.vcxproj">
+      <Project>{C3E628D7-BF39-3EC1-B252-1C2B36F42145}</Project>
+      <Name>lib572</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib573.vcxproj">
+      <Project>{64EE779A-C957-382C-883E-5442C9186B7A}</Project>
+      <Name>lib573</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib574.vcxproj">
+      <Project>{9716AEC1-A8EB-3979-83A7-D4FAF9A21999}</Project>
+      <Name>lib574</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib575.vcxproj">
+      <Project>{83112A71-DF10-31C1-BDF8-D2DAA8B57D84}</Project>
+      <Name>lib575</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib576.vcxproj">
+      <Project>{A721C586-CFE4-3D43-AF4F-BCAA3689889E}</Project>
+      <Name>lib576</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib578.vcxproj">
+      <Project>{864023D3-0B95-3138-B4CB-F86CE1931A22}</Project>
+      <Name>lib578</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib579.vcxproj">
+      <Project>{D2D51D47-1753-3F6E-95A6-E1535F038146}</Project>
+      <Name>lib579</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib582.vcxproj">
+      <Project>{3A925D44-1FAF-37D8-8490-3EE000677FD9}</Project>
+      <Name>lib582</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib583.vcxproj">
+      <Project>{E6C2451C-01AB-3372-A7D8-F92015BC45DE}</Project>
+      <Name>lib583</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib584.vcxproj">
+      <Project>{4E41BEDF-6240-3624-A46F-D9B5059FE54E}</Project>
+      <Name>lib584</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib585.vcxproj">
+      <Project>{72AB8D52-5566-3FCD-92E5-ED798CE8E56D}</Project>
+      <Name>lib585</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib586.vcxproj">
+      <Project>{F5F60A43-0E93-3380-A6F0-B147B5FD85DF}</Project>
+      <Name>lib586</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib587.vcxproj">
+      <Project>{F275982E-607D-3136-8AB4-96D784FB6CF5}</Project>
+      <Name>lib587</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib589.vcxproj">
+      <Project>{7FE557FB-F478-3989-93C6-14AE75F2CF38}</Project>
+      <Name>lib589</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib590.vcxproj">
+      <Project>{37F70DA3-0D92-31C1-A2A2-F3EBC834882C}</Project>
+      <Name>lib590</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib591.vcxproj">
+      <Project>{C69CDBDA-159A-35D6-88A7-AE3853F774E7}</Project>
+      <Name>lib591</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib597.vcxproj">
+      <Project>{43278721-531E-311C-A919-2613D959E30F}</Project>
+      <Name>lib597</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib598.vcxproj">
+      <Project>{8F4B6BE5-C2D5-35BB-9477-80E4FDDE0E5E}</Project>
+      <Name>lib598</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib599.vcxproj">
+      <Project>{952ED0D2-B495-3066-89F6-3F10FB4C8A4F}</Project>
+      <Name>lib599</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib643.vcxproj">
+      <Project>{4B6DE245-5A5C-3B3C-907E-F41B93A3505F}</Project>
+      <Name>lib643</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib645.vcxproj">
+      <Project>{05B62E2F-99AA-3CC4-8BC8-30D970C20A6E}</Project>
+      <Name>lib645</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib650.vcxproj">
+      <Project>{09665A22-7ABF-34C5-ADAA-2D9F082CDAA3}</Project>
+      <Name>lib650</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib651.vcxproj">
+      <Project>{8EE02B2B-7D6F-3DE2-9395-29C877199CEE}</Project>
+      <Name>lib651</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib652.vcxproj">
+      <Project>{1B29BF98-08F3-3B12-A27A-4BAC87B755D3}</Project>
+      <Name>lib652</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib653.vcxproj">
+      <Project>{32E04419-434C-3431-B10B-C5FE5EBEEC93}</Project>
+      <Name>lib653</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib654.vcxproj">
+      <Project>{894DEB37-9E94-3906-9598-D5CECA4E5F53}</Project>
+      <Name>lib654</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib655.vcxproj">
+      <Project>{34C89F13-C83E-32FF-983A-DCF06514E9A6}</Project>
+      <Name>lib655</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib658.vcxproj">
+      <Project>{9DA2410A-6BAB-3214-816E-A7CF806CC923}</Project>
+      <Name>lib658</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib659.vcxproj">
+      <Project>{E6A452AD-9283-39CF-AB86-5321E518DA63}</Project>
+      <Name>lib659</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib661.vcxproj">
+      <Project>{C8C058D9-ED61-3815-9A87-AB5C70618C55}</Project>
+      <Name>lib661</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib666.vcxproj">
+      <Project>{071185C7-2788-3B4E-A481-E5D0D62E7D7A}</Project>
+      <Name>lib666</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib667.vcxproj">
+      <Project>{951492E1-7DE8-3BCA-BF27-69197F6E0EA5}</Project>
+      <Name>lib667</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib668.vcxproj">
+      <Project>{A4D0A5C9-9917-3C4D-823D-90555FF84F4E}</Project>
+      <Name>lib668</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib670.vcxproj">
+      <Project>{4B120B55-6C84-3B17-B3F1-7B5B2597805D}</Project>
+      <Name>lib670</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib671.vcxproj">
+      <Project>{DD7E238C-AB66-38ED-90E8-E31CAFBBD3BE}</Project>
+      <Name>lib671</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib672.vcxproj">
+      <Project>{7B6C839D-A358-3906-BB1E-AD4C991148C8}</Project>
+      <Name>lib672</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib673.vcxproj">
+      <Project>{737BE55B-B311-3620-A6C4-478C9A7C190F}</Project>
+      <Name>lib673</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib674.vcxproj">
+      <Project>{F6F3C44F-D0AB-3396-80A5-1092DC4860B0}</Project>
+      <Name>lib674</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib676.vcxproj">
+      <Project>{EAB5B9FC-41BB-357F-BC1F-BFF497F4EC33}</Project>
+      <Name>lib676</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib677.vcxproj">
+      <Project>{288FF7DB-A695-3F32-B5F2-205581C0BEC5}</Project>
+      <Name>lib677</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\lib678.vcxproj">
+      <Project>{84290793-79E7-35DC-BDAF-EB17B521EBC9}</Project>
+      <Name>lib678</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\libauthretry.vcxproj">
+      <Project>{638B6BFD-7455-358C-A3B3-C481B77C2645}</Project>
+      <Name>libauthretry</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\libntlmconnect.vcxproj">
+      <Project>{F93AA8EF-F173-3F38-A8CC-17CD942C4CBA}</Project>
+      <Name>libntlmconnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\libtest\libprereq.vcxproj">
+      <Project>{75FB2AF0-C04B-31F4-B577-31FF6ADF6C87}</Project>
+      <Name>libprereq</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\mqttd.vcxproj">
+      <Project>{1E93ED48-C1E7-344C-A5E5-EF09B476FA5A}</Project>
+      <Name>mqttd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\resolve.vcxproj">
+      <Project>{A23B27A8-38CC-39AF-A27E-94DD47FC3940}</Project>
+      <Name>resolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\rtspd.vcxproj">
+      <Project>{6D52330C-79A9-3A24-A767-1F15E96F10FF}</Project>
+      <Name>rtspd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\sockfilt.vcxproj">
+      <Project>{54D7C9FA-B845-3D3D-9D8D-19BA758382C8}</Project>
+      <Name>sockfilt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\socksd.vcxproj">
+      <Project>{F8D86568-D281-30BA-81A1-230CF99631E5}</Project>
+      <Name>socksd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\sws.vcxproj">
+      <Project>{A8651F1E-1669-3ED1-89F8-F4D1EDA9421F}</Project>
+      <Name>sws</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\tests\server\tftpd.vcxproj">
+      <Project>{CA400BD2-BD1E-3A6F-87B6-FD6062DA01C7}</Project>
+      <Name>tftpd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\vs_project\aliddns_cpp_all\jsoncpp-src\jsoncpp-1.9.5-build\CMakeFiles\af86f4ad3604355729a7417a0c0ffdf5\NightlyMemoryCheck.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\vs_project\aliddns_cpp_all\jsoncpp-src\jsoncpp-1.9.5\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\vs_project\aliddns_cpp_all\jsoncpp-src\jsoncpp-1.9.5-build\CMakeFiles\NightlyMemoryCheck" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B702F9CE-69EB-38E1-B8F5-1E3620CD47EC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

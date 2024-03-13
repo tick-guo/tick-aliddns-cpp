@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\server\disabled.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\tests\server\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{997C7C51-DFDC-3287-B0DC-A247EF7EC1FF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

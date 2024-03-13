@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{37dd5242-7695-44c7-846f-59a2599ece0b}</ProjectGuid>
+    <RootNamespace>AliddnsLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory)\core\include;$(MSBuildProjectDirectory)\core\src;$(MSBuildProjectDirectory)\..\dep-lib\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory)\core\include;$(MSBuildProjectDirectory)\core\src;$(MSBuildProjectDirectory)\..\dep-lib\include;$(IncludePath)</IncludePath>
+    <TargetName>$(ProjectName)-d</TargetName>
+    <LibraryPath>$(MSBuildProjectDirectory)\3rdparty\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;BUILDING_LIBCURL;HTTP_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Crypt32.lib;Rpcrt4.lib;jsoncpp-d.lib;libcurl-d.lib;Wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32;BUILDING_LIBCURL;HTTP_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="core\src\CurlHttpClient.h" />
+    <ClInclude Include="core\src\EcsMetadataFetcher.h" />
+    <ClInclude Include="core\src\Executor.h" />
+    <ClInclude Include="core\src\LocalEndpoints.h" />
+    <ClInclude Include="core\src\LocalEndpointsForWindows.h" />
+    <ClInclude Include="include\alibabacloud\alidns\AlidnsClient.h" />
+    <ClInclude Include="include\alibabacloud\alidns\AlidnsExport.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddCustomLineRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddCustomLineResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsCacheDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsCacheDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmMonitorRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmMonitorResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainBackupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainBackupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainRecordRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainRecordResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmMonitorRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmMonitorResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\BindInstanceDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\BindInstanceDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainOfDnsProductRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainOfDnsProductResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\CopyGtmConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\CopyGtmConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsAppKeyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsAppKeyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsUdpIpSegmentRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsUdpIpSegmentResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteCustomLinesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteCustomLinesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsCacheDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsCacheDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainRecordRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainRecordResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteSubDomainRecordsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteSubDomainRecordsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultCountRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultCountResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultDetailRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultDetailResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLineRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLineResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLinesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLinesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsCacheDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsCacheDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategiesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategiesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyAvailableConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyAvailableConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddrAttributeInfoRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddrAttributeInfoResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddressPoolAvailableConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddressPoolAvailableConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAvailableAlertGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAvailableAlertGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstancesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstancesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceSystemCnameRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceSystemCnameResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmLogsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmLogsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorAvailableConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorAvailableConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstanceRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstanceResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstancesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstancesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDNSSLBSubDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDNSSLBSubDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohAccountStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohAccountStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohUserInfoRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohUserInfoResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainDnssecInfoRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainDnssecInfoResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainGroupsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainGroupsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainInfoRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainInfoResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainLogsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainLogsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainNsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainNsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordInfoRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordInfoResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainResolveStatisticsSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainResolveStatisticsSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategiesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategiesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyAvailableConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyAvailableConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAvailableAlertGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAvailableAlertGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstancesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstancesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceSystemCnameRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceSystemCnameResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmLogsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmLogsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorAvailableConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorAvailableConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanAvailableConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanAvailableConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlansRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlansResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeInstanceDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeInstanceDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheInstancesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheInstancesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheRemainQuotaRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheRemainQuotaResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTaskRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTaskResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTasksRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTasksResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAccountSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAccountSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeysRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeysResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsOperateLogsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsOperateLogsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatLogsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatLogsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUdpIpSegmentsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUdpIpSegmentsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUserInfoRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUserInfoResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordLogsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordLogsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordResolveStatisticsSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordResolveStatisticsSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsSummaryRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsSummaryResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSubDomainRecordsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSubDomainRecordsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSupportLinesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSupportLinesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTagsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTagsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTransferDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTransferDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ExecuteGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ExecuteGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\GetMainDomainNameRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\GetMainDomainNameResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\GetTxtRecordForVerifyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\GetTxtRecordForVerifyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ListTagResourcesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ListTagResourcesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ModifyHichinaDomainDNSRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ModifyHichinaDomainDNSResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveDomainResourceGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveDomainResourceGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveGtmResourceGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveGtmResourceGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\OperateBatchDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\OperateBatchDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\PausePdnsServiceRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\PausePdnsServiceResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\PreviewGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\PreviewGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsAppKeyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsAppKeyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsUdpIpSegmentRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsUdpIpSegmentResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ResumePdnsServiceRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ResumePdnsServiceResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RetrieveDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RetrieveDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RollbackGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\RollbackGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmAccessModeRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmAccessModeResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmMonitorStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmMonitorStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDNSSLBStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDNSSLBStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainDnssecStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainDnssecStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainRecordStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainRecordStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmAccessModeRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmAccessModeResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmMonitorStatusRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmMonitorStatusResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SubmitIspFlushCacheTaskRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SubmitIspFlushCacheTaskResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SwitchDnsGtmInstanceStrategyModeRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\SwitchDnsGtmInstanceStrategyModeResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\TagResourcesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\TagResourcesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\TransferDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\TransferDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UnbindInstanceDomainsRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UnbindInstanceDomainsResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UntagResourcesRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UntagResourcesResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateAppKeyStateRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateAppKeyStateResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateCustomLineRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateCustomLineResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainRemarkRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainRemarkResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmInstanceGlobalConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmInstanceGlobalConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmMonitorRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmMonitorResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDNSSLBWeightRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDNSSLBWeightResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainGroupRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainGroupResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordRemarkRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordRemarkResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRemarkRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRemarkResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAccessStrategyRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAccessStrategyResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAddressPoolRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAddressPoolResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmInstanceGlobalConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmInstanceGlobalConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmMonitorRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmMonitorResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmRecoveryPlanRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmRecoveryPlanResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateIspFlushCacheInstanceConfigRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateIspFlushCacheInstanceConfigResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidateDnsGtmCnameRrCanUseRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidateDnsGtmCnameRrCanUseResult.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidatePdnsUdpIpSegmentRequest.h" />
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidatePdnsUdpIpSegmentResult.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AliddnsLib.cpp" />
+    <ClCompile Include="core\src\AlibabaCloud.cc" />
+    <ClCompile Include="core\src\AsyncCallerContext.cc" />
+    <ClCompile Include="core\src\ClientConfiguration.cc" />
+    <ClCompile Include="core\src\CommonClient.cc" />
+    <ClCompile Include="core\src\CommonRequest.cc" />
+    <ClCompile Include="core\src\CommonResponse.cc" />
+    <ClCompile Include="core\src\CoreClient.cc" />
+    <ClCompile Include="core\src\Credentials.cc" />
+    <ClCompile Include="core\src\CredentialsProvider.cc" />
+    <ClCompile Include="core\src\CurlHttpClient.cc" />
+    <ClCompile Include="core\src\EcsMetadataFetcher.cc" />
+    <ClCompile Include="core\src\EndpointProvider.cc" />
+    <ClCompile Include="core\src\Error.cc" />
+    <ClCompile Include="core\src\Executor.cc" />
+    <ClCompile Include="core\src\HmacSha1Signer.cc" />
+    <ClCompile Include="core\src\HttpClient.cc" />
+    <ClCompile Include="core\src\HttpMessage.cc" />
+    <ClCompile Include="core\src\HttpRequest.cc" />
+    <ClCompile Include="core\src\HttpResponse.cc" />
+    <ClCompile Include="core\src\InstanceProfileCredentials.cc" />
+    <ClCompile Include="core\src\InstanceProfileCredentialsProvider.cc" />
+    <ClCompile Include="core\src\location\LocationClient.cc" />
+    <ClCompile Include="core\src\location\LocationRequest.cc" />
+    <ClCompile Include="core\src\location\model\DescribeEndpointsRequest.cc" />
+    <ClCompile Include="core\src\location\model\DescribeEndpointsResult.cc" />
+    <ClCompile Include="core\src\NetworkProxy.cc" />
+    <ClCompile Include="core\src\Outcome.cc" />
+    <ClCompile Include="core\src\RoaServiceClient.cc" />
+    <ClCompile Include="core\src\RoaServiceRequest.cc" />
+    <ClCompile Include="core\src\RpcServiceClient.cc" />
+    <ClCompile Include="core\src\RpcServiceRequest.cc" />
+    <ClCompile Include="core\src\Runnable.cc" />
+    <ClCompile Include="core\src\ServiceRequest.cc" />
+    <ClCompile Include="core\src\ServiceResult.cc" />
+    <ClCompile Include="core\src\Signer.cc" />
+    <ClCompile Include="core\src\SimpleCredentialsProvider.cc" />
+    <ClCompile Include="core\src\StsAssumeRoleCredentialsProvider.cc" />
+    <ClCompile Include="core\src\sts\model\AssumeRoleRequest.cc" />
+    <ClCompile Include="core\src\sts\model\AssumeRoleResult.cc" />
+    <ClCompile Include="core\src\sts\model\GetCallerIdentityRequest.cc" />
+    <ClCompile Include="core\src\sts\model\GetCallerIdentityResult.cc" />
+    <ClCompile Include="core\src\sts\StsClient.cc" />
+    <ClCompile Include="core\src\sts\StsRequest.cc" />
+    <ClCompile Include="core\src\Url.cc" />
+    <ClCompile Include="core\src\Utils.cc" />
+    <ClCompile Include="src\AlidnsClient.cc" />
+    <ClCompile Include="src\model\AddCustomLineRequest.cc" />
+    <ClCompile Include="src\model\AddCustomLineResult.cc" />
+    <ClCompile Include="src\model\AddDomainRecordRequest.cc" />
+    <ClCompile Include="src\model\AddDomainRecordResult.cc" />
+    <ClCompile Include="src\model\AddDomainRequest.cc" />
+    <ClCompile Include="src\model\AddDomainResult.cc" />
+    <ClCompile Include="src\model\DescribeDomainRecordsRequest.cc" />
+    <ClCompile Include="src\model\DescribeDomainRecordsResult.cc" />
+    <ClCompile Include="src\model\UpdateDomainRecordRequest.cc" />
+    <ClCompile Include="src\model\UpdateDomainRecordResult.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\src\Config.h.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

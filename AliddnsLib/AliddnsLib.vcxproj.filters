@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\src">
+      <UniqueIdentifier>{149cfb02-979c-4aac-b4d7-0fdfecb3a3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\model">
+      <UniqueIdentifier>{9969c478-a67b-4197-9fcc-20941f6dbcf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\include">
+      <UniqueIdentifier>{90b65e8f-432a-4d47-881e-102d9d1a5edd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\include\alibabacloud">
+      <UniqueIdentifier>{4be2d5f4-b4f1-4b5b-95f0-240914110f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\include\alibabacloud\alidns">
+      <UniqueIdentifier>{e035e5d7-6171-418c-badb-abeae4c15cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\include\alibabacloud\alidns\model">
+      <UniqueIdentifier>{ba7f8231-b80a-4b56-9c55-f0d48635291e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{05bc7611-10db-46ce-b8d2-ecef8a9cdb20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\alibabacloud\alidns\AlidnsClient.h">
+      <Filter>头文件\include\alibabacloud\alidns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\AlidnsExport.h">
+      <Filter>头文件\include\alibabacloud\alidns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmMonitorRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmMonitorResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainBackupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainBackupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainRecordRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainRecordResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmMonitorRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmMonitorResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\BindInstanceDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\BindInstanceDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainOfDnsProductRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ChangeDomainOfDnsProductResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\CopyGtmConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\CopyGtmConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsAppKeyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsAppKeyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsUdpIpSegmentRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\CreatePdnsUdpIpSegmentResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteCustomLinesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteCustomLinesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsCacheDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsCacheDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDnsGtmAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainRecordRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainRecordResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteSubDomainRecordsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DeleteSubDomainRecordsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultCountRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultCountResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultDetailRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeBatchResultDetailResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLineRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLineResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLinesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeCustomLinesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsCacheDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsCacheDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategiesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategiesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyAvailableConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyAvailableConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddrAttributeInfoRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddrAttributeInfoResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddressPoolAvailableConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAddressPoolAvailableConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAvailableAlertGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmAvailableAlertGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceAddressPoolsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstancesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstancesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceSystemCnameRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmInstanceSystemCnameResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmLogsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmLogsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorAvailableConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorAvailableConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsGtmMonitorConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstanceRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstanceResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstancesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDnsProductInstancesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDNSSLBSubDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDNSSLBSubDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohAccountStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohAccountStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohDomainStatisticsSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohSubDomainStatisticsSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohUserInfoRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDohUserInfoResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainDnssecInfoRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainDnssecInfoResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainGroupsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainGroupsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainInfoRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainInfoResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainLogsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainLogsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainNsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainNsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordInfoRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordInfoResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainRecordsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainResolveStatisticsSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainResolveStatisticsSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeDomainStatisticsSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategiesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategiesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyAvailableConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyAvailableConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAvailableAlertGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmAvailableAlertGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceAddressPoolsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstancesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstancesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceSystemCnameRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmInstanceSystemCnameResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmLogsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmLogsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorAvailableConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorAvailableConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmMonitorConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanAvailableConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanAvailableConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlansRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeGtmRecoveryPlansResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeInstanceDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeInstanceDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheInstancesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheInstancesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheRemainQuotaRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheRemainQuotaResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTaskRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTaskResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTasksRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeIspFlushCacheTasksResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAccountSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAccountSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeysRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsAppKeysResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsOperateLogsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsOperateLogsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsRequestStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatLogsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatLogsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsThreatStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUdpIpSegmentsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUdpIpSegmentsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUserInfoRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribePdnsUserInfoResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordLogsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordLogsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordResolveStatisticsSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordResolveStatisticsSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsSummaryRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeRecordStatisticsSummaryResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSubDomainRecordsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSubDomainRecordsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSupportLinesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeSupportLinesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTagsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTagsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTransferDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\DescribeTransferDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ExecuteGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ExecuteGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\GetMainDomainNameRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\GetMainDomainNameResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\GetTxtRecordForVerifyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\GetTxtRecordForVerifyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ListTagResourcesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ListTagResourcesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ModifyHichinaDomainDNSRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ModifyHichinaDomainDNSResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveDomainResourceGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveDomainResourceGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveGtmResourceGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\MoveGtmResourceGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\OperateBatchDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\OperateBatchDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\PausePdnsServiceRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\PausePdnsServiceResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\PreviewGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\PreviewGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsAppKeyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsAppKeyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsUdpIpSegmentRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RemovePdnsUdpIpSegmentResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ResumePdnsServiceRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ResumePdnsServiceResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RetrieveDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RetrieveDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RollbackGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\RollbackGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmAccessModeRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmAccessModeResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmMonitorStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDnsGtmMonitorStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDNSSLBStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDNSSLBStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainDnssecStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainDnssecStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainRecordStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetDomainRecordStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmAccessModeRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmAccessModeResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmMonitorStatusRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SetGtmMonitorStatusResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SubmitIspFlushCacheTaskRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SubmitIspFlushCacheTaskResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SwitchDnsGtmInstanceStrategyModeRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\SwitchDnsGtmInstanceStrategyModeResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\TagResourcesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\TagResourcesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\TransferDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\TransferDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UnbindInstanceDomainsRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UnbindInstanceDomainsResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UntagResourcesRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UntagResourcesResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateAppKeyStateRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateAppKeyStateResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateCustomLineRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateCustomLineResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainRemarkRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainRemarkResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsCacheDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmInstanceGlobalConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmInstanceGlobalConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmMonitorRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDnsGtmMonitorResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDNSSLBWeightRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDNSSLBWeightResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainGroupRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainGroupResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordRemarkRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordRemarkResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRecordResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRemarkRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateDomainRemarkResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAddressPoolRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmAddressPoolResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmInstanceGlobalConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmInstanceGlobalConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmMonitorRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmMonitorResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmRecoveryPlanRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateGtmRecoveryPlanResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateIspFlushCacheInstanceConfigRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\UpdateIspFlushCacheInstanceConfigResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidateDnsGtmCnameRrCanUseRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidateDnsGtmCnameRrCanUseResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidatePdnsUdpIpSegmentRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\ValidatePdnsUdpIpSegmentResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddCustomLineRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddCustomLineResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsCacheDomainRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsCacheDomainResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAccessStrategyRequest.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alibabacloud\alidns\model\AddDnsGtmAccessStrategyResult.h">
+      <Filter>头文件\include\alibabacloud\alidns\model</Filter>
+    </ClInclude>
+    <ClInclude Include="core\src\CurlHttpClient.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\src\EcsMetadataFetcher.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\src\Executor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\src\LocalEndpoints.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\src\LocalEndpointsForWindows.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AliddnsLib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AlidnsClient.cc">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\AlibabaCloud.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\AsyncCallerContext.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\ClientConfiguration.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\CommonClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\CommonRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\CommonResponse.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\CoreClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Credentials.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\CredentialsProvider.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\CurlHttpClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\EcsMetadataFetcher.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\EndpointProvider.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Error.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Executor.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\HmacSha1Signer.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\HttpClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\HttpMessage.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\HttpRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\HttpResponse.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\InstanceProfileCredentials.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\InstanceProfileCredentialsProvider.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\NetworkProxy.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Outcome.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\RoaServiceClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\RoaServiceRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\RpcServiceClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\RpcServiceRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Runnable.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\ServiceRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\ServiceResult.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Signer.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\SimpleCredentialsProvider.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\StsAssumeRoleCredentialsProvider.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Url.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\Utils.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\sts\StsClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\sts\StsRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\sts\model\GetCallerIdentityRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\sts\model\GetCallerIdentityResult.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\sts\model\AssumeRoleRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\sts\model\AssumeRoleResult.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\location\LocationClient.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\location\LocationRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\location\model\DescribeEndpointsRequest.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\src\location\model\DescribeEndpointsResult.cc">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\AddDomainRequest.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\AddDomainResult.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\AddDomainRecordRequest.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\AddDomainRecordResult.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\DescribeDomainRecordsRequest.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\DescribeDomainRecordsResult.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\UpdateDomainRecordRequest.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\UpdateDomainRecordResult.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\AddCustomLineRequest.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\AddCustomLineResult.cc">
+      <Filter>源文件\src\model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\src\Config.h.in">
+      <Filter>core</Filter>
+    </None>
+  </ItemGroup>
+</Project>

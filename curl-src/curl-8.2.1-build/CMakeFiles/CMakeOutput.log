@@ -1,0 +1,407 @@
+Performing Curl Test HAVE_IOCTLSOCKET passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_15a4e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:10。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_15a4e.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_15a4e.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15a4e.dir\Debug\\" /Fd"cmTC_15a4e.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15a4e.dir\Debug\\" /Fd"cmTC_15a4e.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(221): warning C4700: 使用了未初始化的局部变量“socket” [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_15a4e.vcxproj]
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_15a4e.exe" /INCREMENTAL /ILK:"cmTC_15a4e.dir\Debug\cmTC_15a4e.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_15a4e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_15a4e.lib" /MACHINE:X64  /machine:x64 cmTC_15a4e.dir\Debug\CurlTests.obj
+  cmTC_15a4e.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_15a4e.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_15a4e.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\cmTC_15a4e.write.1u.tlog" "cmTC_15a4e.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_15a4e.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\cmTC_15a4e.write.1u.tlog" "cmTC_15a4e.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_15a4e.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\cmTC_15a4e.write.1u.tlog" "cmTC_15a4e.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\unsuccessfulbuild”。
+  正在对“cmTC_15a4e.dir\Debug\cmTC_15a4e.tlog\cmTC_15a4e.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_15a4e.vcxproj”(默认目标)的操作。
+
+已成功生成。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_15a4e.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(221): warning C4700: 使用了未初始化的局部变量“socket” [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_15a4e.vcxproj]
+
+    1 个警告
+    0 个错误
+
+已用时间 00:00:00.75
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_624a4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:12。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_624a4.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_624a4.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_624a4.dir\Debug\cmTC_624a4.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_624a4.dir\Debug\cmTC_624a4.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_624a4.dir\Debug\cmTC_624a4.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET_FIONBIO /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_624a4.dir\Debug\\" /Fd"cmTC_624a4.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET_FIONBIO /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_624a4.dir\Debug\\" /Fd"cmTC_624a4.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_624a4.exe" /INCREMENTAL /ILK:"cmTC_624a4.dir\Debug\cmTC_624a4.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_624a4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_624a4.lib" /MACHINE:X64  /machine:x64 cmTC_624a4.dir\Debug\CurlTests.obj
+  cmTC_624a4.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_624a4.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_624a4.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_624a4.dir\Debug\cmTC_624a4.tlog\cmTC_624a4.write.1u.tlog" "cmTC_624a4.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_624a4.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_624a4.dir\Debug\cmTC_624a4.tlog\cmTC_624a4.write.1u.tlog" "cmTC_624a4.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_624a4.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_624a4.dir\Debug\cmTC_624a4.tlog\cmTC_624a4.write.1u.tlog" "cmTC_624a4.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_624a4.dir\Debug\cmTC_624a4.tlog\unsuccessfulbuild”。
+  正在对“cmTC_624a4.dir\Debug\cmTC_624a4.tlog\cmTC_624a4.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_624a4.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.76
+
+
+Performing Curl Test HAVE_BOOL_T passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2a51c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:15。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_2a51c.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_2a51c.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_BOOL_T /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2a51c.dir\Debug\\" /Fd"cmTC_2a51c.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_BOOL_T /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2a51c.dir\Debug\\" /Fd"cmTC_2a51c.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2a51c.exe" /INCREMENTAL /ILK:"cmTC_2a51c.dir\Debug\cmTC_2a51c.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_2a51c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_2a51c.lib" /MACHINE:X64  /machine:x64 cmTC_2a51c.dir\Debug\CurlTests.obj
+  cmTC_2a51c.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2a51c.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2a51c.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\cmTC_2a51c.write.1u.tlog" "cmTC_2a51c.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2a51c.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\cmTC_2a51c.write.1u.tlog" "cmTC_2a51c.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2a51c.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\cmTC_2a51c.write.1u.tlog" "cmTC_2a51c.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\unsuccessfulbuild”。
+  正在对“cmTC_2a51c.dir\Debug\cmTC_2a51c.tlog\cmTC_2a51c.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_2a51c.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.71
+
+
+Performing Curl Test HAVE_VARIADIC_MACROS_C99 passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b7512.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:16。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_b7512.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_b7512.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_b7512.dir\Debug\cmTC_b7512.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_b7512.dir\Debug\cmTC_b7512.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_b7512.dir\Debug\cmTC_b7512.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_VARIADIC_MACROS_C99 /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b7512.dir\Debug\\" /Fd"cmTC_b7512.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_VARIADIC_MACROS_C99 /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b7512.dir\Debug\\" /Fd"cmTC_b7512.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_b7512.exe" /INCREMENTAL /ILK:"cmTC_b7512.dir\Debug\cmTC_b7512.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_b7512.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_b7512.lib" /MACHINE:X64  /machine:x64 cmTC_b7512.dir\Debug\CurlTests.obj
+  cmTC_b7512.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_b7512.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_b7512.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_b7512.dir\Debug\cmTC_b7512.tlog\cmTC_b7512.write.1u.tlog" "cmTC_b7512.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_b7512.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_b7512.dir\Debug\cmTC_b7512.tlog\cmTC_b7512.write.1u.tlog" "cmTC_b7512.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_b7512.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_b7512.dir\Debug\cmTC_b7512.tlog\cmTC_b7512.write.1u.tlog" "cmTC_b7512.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_b7512.dir\Debug\cmTC_b7512.tlog\unsuccessfulbuild”。
+  正在对“cmTC_b7512.dir\Debug\cmTC_b7512.tlog\cmTC_b7512.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_b7512.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.69
+
+
+Performing Curl Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_04c80.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:19。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_04c80.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_04c80.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_04c80.dir\Debug\cmTC_04c80.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_04c80.dir\Debug\cmTC_04c80.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_04c80.dir\Debug\cmTC_04c80.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04c80.dir\Debug\\" /Fd"cmTC_04c80.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CurlTests.c
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04c80.dir\Debug\\" /Fd"cmTC_04c80.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  _WIN32_WINNT=0x0A00
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_04c80.exe" /INCREMENTAL /ILK:"cmTC_04c80.dir\Debug\cmTC_04c80.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_04c80.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_04c80.lib" /MACHINE:X64  /machine:x64 cmTC_04c80.dir\Debug\CurlTests.obj
+  cmTC_04c80.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_04c80.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_04c80.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_04c80.dir\Debug\cmTC_04c80.tlog\cmTC_04c80.write.1u.tlog" "cmTC_04c80.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_04c80.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_04c80.dir\Debug\cmTC_04c80.tlog\cmTC_04c80.write.1u.tlog" "cmTC_04c80.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_04c80.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_04c80.dir\Debug\cmTC_04c80.tlog\cmTC_04c80.write.1u.tlog" "cmTC_04c80.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_04c80.dir\Debug\cmTC_04c80.tlog\unsuccessfulbuild”。
+  正在对“cmTC_04c80.dir\Debug\cmTC_04c80.tlog\cmTC_04c80.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_04c80.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.80
+
+
+Performing Curl Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0c002.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:45:10。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_0c002.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_0c002.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_0c002.dir\Debug\cmTC_0c002.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_0c002.dir\Debug\cmTC_0c002.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_0c002.dir\Debug\cmTC_0c002.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0c002.dir\Debug\\" /Fd"cmTC_0c002.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0c002.dir\Debug\\" /Fd"cmTC_0c002.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  _WIN32_WINNT=0x0A00
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0c002.exe" /INCREMENTAL /ILK:"cmTC_0c002.dir\Debug\cmTC_0c002.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_0c002.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_0c002.lib" /MACHINE:X64  /machine:x64 cmTC_0c002.dir\Debug\CurlTests.obj
+  cmTC_0c002.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0c002.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0c002.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_0c002.dir\Debug\cmTC_0c002.tlog\cmTC_0c002.write.1u.tlog" "cmTC_0c002.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0c002.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_0c002.dir\Debug\cmTC_0c002.tlog\cmTC_0c002.write.1u.tlog" "cmTC_0c002.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0c002.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_0c002.dir\Debug\cmTC_0c002.tlog\cmTC_0c002.write.1u.tlog" "cmTC_0c002.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_0c002.dir\Debug\cmTC_0c002.tlog\unsuccessfulbuild”。
+  正在对“cmTC_0c002.dir\Debug\cmTC_0c002.tlog\cmTC_0c002.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_0c002.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.94
+
+
+Performing Curl Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7b300.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:46:36。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_7b300.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_7b300.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_7b300.dir\Debug\cmTC_7b300.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_7b300.dir\Debug\cmTC_7b300.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_7b300.dir\Debug\cmTC_7b300.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7b300.dir\Debug\\" /Fd"cmTC_7b300.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7b300.dir\Debug\\" /Fd"cmTC_7b300.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  _WIN32_WINNT=0x0A00
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_7b300.exe" /INCREMENTAL /ILK:"cmTC_7b300.dir\Debug\cmTC_7b300.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_7b300.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_7b300.lib" /MACHINE:X64  /machine:x64 cmTC_7b300.dir\Debug\CurlTests.obj
+  cmTC_7b300.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_7b300.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_7b300.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_7b300.dir\Debug\cmTC_7b300.tlog\cmTC_7b300.write.1u.tlog" "cmTC_7b300.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_7b300.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_7b300.dir\Debug\cmTC_7b300.tlog\cmTC_7b300.write.1u.tlog" "cmTC_7b300.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_7b300.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_7b300.dir\Debug\cmTC_7b300.tlog\cmTC_7b300.write.1u.tlog" "cmTC_7b300.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_7b300.dir\Debug\cmTC_7b300.tlog\unsuccessfulbuild”。
+  正在对“cmTC_7b300.dir\Debug\cmTC_7b300.tlog\cmTC_7b300.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_7b300.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.89
+
+
+Performing Curl Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2c41d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:46:43。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_2c41d.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_2c41d.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2c41d.dir\Debug\\" /Fd"cmTC_2c41d.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2c41d.dir\Debug\\" /Fd"cmTC_2c41d.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  _WIN32_WINNT=0x0A00
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2c41d.exe" /INCREMENTAL /ILK:"cmTC_2c41d.dir\Debug\cmTC_2c41d.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_2c41d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_2c41d.lib" /MACHINE:X64  /machine:x64 cmTC_2c41d.dir\Debug\CurlTests.obj
+  cmTC_2c41d.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2c41d.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2c41d.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\cmTC_2c41d.write.1u.tlog" "cmTC_2c41d.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2c41d.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\cmTC_2c41d.write.1u.tlog" "cmTC_2c41d.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_2c41d.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\cmTC_2c41d.write.1u.tlog" "cmTC_2c41d.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\unsuccessfulbuild”。
+  正在对“cmTC_2c41d.dir\Debug\cmTC_2c41d.tlog\cmTC_2c41d.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_2c41d.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.83
+
+
+Performing Curl Test HAVE_WIN32_WINNT passed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0549b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:51:57。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_0549b.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_0549b.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_0549b.dir\Debug\cmTC_0549b.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_0549b.dir\Debug\cmTC_0549b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_0549b.dir\Debug\cmTC_0549b.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0549b.dir\Debug\\" /Fd"cmTC_0549b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_WIN32_WINNT /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0549b.dir\Debug\\" /Fd"cmTC_0549b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  _WIN32_WINNT=0x0A00
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0549b.exe" /INCREMENTAL /ILK:"cmTC_0549b.dir\Debug\cmTC_0549b.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_0549b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_0549b.lib" /MACHINE:X64  /machine:x64 cmTC_0549b.dir\Debug\CurlTests.obj
+  cmTC_0549b.vcxproj -> E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0549b.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0549b.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_0549b.dir\Debug\cmTC_0549b.tlog\cmTC_0549b.write.1u.tlog" "cmTC_0549b.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
+  命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0549b.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_0549b.dir\Debug\cmTC_0549b.tlog\cmTC_0549b.write.1u.tlog" "cmTC_0549b.dir\Debug\vcpkg.applocal.log"”已退出，代码为 9009。
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vs_project\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_0549b.exe" "E:\vs_project\vcpkg\installed\x64-windows\bin" "cmTC_0549b.dir\Debug\cmTC_0549b.tlog\cmTC_0549b.write.1u.tlog" "cmTC_0549b.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  正在删除文件“cmTC_0549b.dir\Debug\cmTC_0549b.tlog\unsuccessfulbuild”。
+  正在对“cmTC_0549b.dir\Debug\cmTC_0549b.tlog\cmTC_0549b.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_0549b.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.90
+
+

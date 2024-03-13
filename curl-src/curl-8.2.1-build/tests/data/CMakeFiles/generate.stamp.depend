@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/tests/data/Makefile.inc.cmake
+E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1/tests/data/CMakeLists.txt
+E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1/tests/data/Makefile.inc

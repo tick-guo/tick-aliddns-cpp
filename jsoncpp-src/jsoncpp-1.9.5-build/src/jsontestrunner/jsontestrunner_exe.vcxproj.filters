@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\vs_project\aliddns_cpp_all\jsoncpp-src\jsoncpp-1.9.5\src\jsontestrunner\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\vs_project\aliddns_cpp_all\jsoncpp-src\jsoncpp-1.9.5\src\jsontestrunner\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{07107CFA-DAFA-3811-86B8-DC2A51678EE1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

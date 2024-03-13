@@ -1,0 +1,526 @@
+Performing Curl Test HAVE_FCNTL_O_NONBLOCK failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e664b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:10。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e664b.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_e664b.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_e664b.dir\Debug\cmTC_e664b.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_e664b.dir\Debug\cmTC_e664b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_e664b.dir\Debug\cmTC_e664b.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_FCNTL_O_NONBLOCK /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e664b.dir\Debug\\" /Fd"cmTC_e664b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_FCNTL_O_NONBLOCK /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e664b.dir\Debug\\" /Fd"cmTC_e664b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(46,10): fatal  error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e664b.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e664b.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e664b.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(46,10): fatal  error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e664b.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:00.25
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_87a86.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:11。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_87a86.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_87a86.dir\Debug\cmTC_87a86.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_87a86.dir\Debug\cmTC_87a86.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_87a86.dir\Debug\cmTC_87a86.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET_CAMEL /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87a86.dir\Debug\\" /Fd"cmTC_87a86.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET_CAMEL /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87a86.dir\Debug\\" /Fd"cmTC_87a86.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_87a86.exe" /INCREMENTAL /ILK:"cmTC_87a86.dir\Debug\cmTC_87a86.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_87a86.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_87a86.lib" /MACHINE:X64  /machine:x64 cmTC_87a86.dir\Debug\CurlTests.obj
+CurlTests.obj : error LNK2019: 无法解析的外部符号 IoctlSocket，函数 main 中引用了该符号 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_87a86.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj”(默认目标) (1) ->
+(Link 目标) -> 
+  CurlTests.obj : error LNK2019: 无法解析的外部符号 IoctlSocket，函数 main 中引用了该符号 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_87a86.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_87a86.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.43
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_212b0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:12。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_212b0.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_212b0.dir\Debug\cmTC_212b0.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_212b0.dir\Debug\cmTC_212b0.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_212b0.dir\Debug\cmTC_212b0.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET_CAMEL_FIONBIO /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_212b0.dir\Debug\\" /Fd"cmTC_212b0.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTLSOCKET_CAMEL_FIONBIO /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_212b0.dir\Debug\\" /Fd"cmTC_212b0.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_212b0.exe" /INCREMENTAL /ILK:"cmTC_212b0.dir\Debug\cmTC_212b0.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_212b0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_212b0.lib" /MACHINE:X64  /machine:x64 cmTC_212b0.dir\Debug\CurlTests.obj
+CurlTests.obj : error LNK2019: 无法解析的外部符号 IoctlSocket，函数 main 中引用了该符号 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_212b0.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj”(默认目标) (1) ->
+(Link 目标) -> 
+  CurlTests.obj : error LNK2019: 无法解析的外部符号 IoctlSocket，函数 main 中引用了该符号 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_212b0.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_212b0.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.44
+
+
+Performing Curl Test HAVE_IOCTL_FIONBIO failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5b428.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:13。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_5b428.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_5b428.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_5b428.dir\Debug\cmTC_5b428.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_5b428.dir\Debug\cmTC_5b428.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_5b428.dir\Debug\cmTC_5b428.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTL_FIONBIO /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5b428.dir\Debug\\" /Fd"cmTC_5b428.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTL_FIONBIO /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5b428.dir\Debug\\" /Fd"cmTC_5b428.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(323,33): error C2065: “FIONBIO”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_5b428.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_5b428.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_5b428.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(323,33): error C2065: “FIONBIO”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_5b428.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:00.24
+
+
+Performing Curl Test HAVE_IOCTL_SIOCGIFADDR failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1e480.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:14。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_1e480.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_1e480.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_1e480.dir\Debug\cmTC_1e480.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_1e480.dir\Debug\cmTC_1e480.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_1e480.dir\Debug\cmTC_1e480.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTL_SIOCGIFADDR /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e480.dir\Debug\\" /Fd"cmTC_1e480.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_IOCTL_SIOCGIFADDR /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e480.dir\Debug\\" /Fd"cmTC_1e480.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(348,10): fatal  error C1083: 无法打开包括文件: “net/if.h”: No such file or directory [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_1e480.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_1e480.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_1e480.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(348,10): fatal  error C1083: 无法打开包括文件: “net/if.h”: No such file or directory [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_1e480.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:00.25
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e3298.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:14。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e3298.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_e3298.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_e3298.dir\Debug\cmTC_e3298.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_e3298.dir\Debug\cmTC_e3298.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_e3298.dir\Debug\cmTC_e3298.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_SETSOCKOPT_SO_NONBLOCK /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e3298.dir\Debug\\" /Fd"cmTC_e3298.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_SETSOCKOPT_SO_NONBLOCK /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e3298.dir\Debug\\" /Fd"cmTC_e3298.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(384,54): error C2065: “SO_NONBLOCK”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e3298.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e3298.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e3298.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(384,54): error C2065: “SO_NONBLOCK”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e3298.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:00.31
+
+
+Performing Curl Test HAVE_FILE_OFFSET_BITS failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6e3e2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:15。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_6e3e2.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_6e3e2.dir\Debug\cmTC_6e3e2.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_6e3e2.dir\Debug\cmTC_6e3e2.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_6e3e2.dir\Debug\cmTC_6e3e2.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_FILE_OFFSET_BITS /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e3e2.dir\Debug\\" /Fd"cmTC_6e3e2.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_FILE_OFFSET_BITS /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e3e2.dir\Debug\\" /Fd"cmTC_6e3e2.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(198,23): warning C4293: “<<”: Shift 计数为负或过大，其行为未定义 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(199,27): warning C4293: “<<”: Shift 计数为负或过大，其行为未定义 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(198,7): error C2118: 负下标 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(198,23): warning C4293: “<<”: Shift 计数为负或过大，其行为未定义 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(199,27): warning C4293: “<<”: Shift 计数为负或过大，其行为未定义 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj]
+
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(198,7): error C2118: 负下标 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_6e3e2.vcxproj]
+
+    2 个警告
+    1 个错误
+
+已用时间 00:00:00.24
+
+
+Performing Curl Test HAVE_VARIADIC_MACROS_GCC failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8f366.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:17。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_8f366.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_8f366.dir\Debug\cmTC_8f366.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_8f366.dir\Debug\cmTC_8f366.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_8f366.dir\Debug\cmTC_8f366.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_VARIADIC_MACROS_GCC /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8f366.dir\Debug\\" /Fd"cmTC_8f366.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_VARIADIC_MACROS_GCC /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8f366.dir\Debug\\" /Fd"cmTC_8f366.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(475,1): error C2010: “.”: 宏参数表中的意外 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(476,1): error C2010: “.”: 宏参数表中的意外 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(475,1): error C2010: “.”: 宏参数表中的意外 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(476,1): error C2010: “.”: 宏参数表中的意外 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_8f366.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.25
+
+
+Performing Curl Test HAVE_ATOMIC failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_216bc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:17。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_216bc.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_216bc.dir\Debug\cmTC_216bc.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_216bc.dir\Debug\cmTC_216bc.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_216bc.dir\Debug\cmTC_216bc.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_ATOMIC /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_216bc.dir\Debug\\" /Fd"cmTC_216bc.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_ATOMIC /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_216bc.dir\Debug\\" /Fd"cmTC_216bc.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(512,15): error C2065: “_Atomic”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(512,11): error C2143: 语法错误: 缺少“;”(在“类型”的前面) [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(512,15): error C2065: “_Atomic”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(512,11): error C2143: 语法错误: 缺少“;”(在“类型”的前面) [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_216bc.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.23
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_90137.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:20。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_90137.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_90137.dir\Debug\cmTC_90137.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_90137.dir\Debug\cmTC_90137.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_90137.dir\Debug\cmTC_90137.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_GLIBC_STRERROR_R /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90137.dir\Debug\\" /Fd"cmTC_90137.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_GLIBC_STRERROR_R /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90137.dir\Debug\\" /Fd"cmTC_90137.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(400,51): error C2109: 下标要求数组或指针类型 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(400,3): error C2198: “check”: 用于调用的参数太少 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(400,51): error C2109: 下标要求数组或指针类型 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(400,3): error C2198: “check”: 用于调用的参数太少 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_90137.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.24
+
+
+Performing Curl Test HAVE_POSIX_STRERROR_R failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_78c7b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:21。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_78c7b.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_78c7b.dir\Debug\cmTC_78c7b.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_78c7b.dir\Debug\cmTC_78c7b.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_78c7b.dir\Debug\cmTC_78c7b.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_POSIX_STRERROR_R /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_78c7b.dir\Debug\\" /Fd"cmTC_78c7b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_POSIX_STRERROR_R /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_78c7b.dir\Debug\\" /Fd"cmTC_78c7b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_78c7b.exe" /INCREMENTAL /ILK:"cmTC_78c7b.dir\Debug\cmTC_78c7b.ilk" /NOLOGO /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib" /LIBPATH:"E:\vs_project\vcpkg\installed\x64-windows\lib\manual-link" ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\vs_project\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_78c7b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp/Debug/cmTC_78c7b.lib" /MACHINE:X64  /machine:x64 cmTC_78c7b.dir\Debug\CurlTests.obj
+CurlTests.obj : error LNK2019: 无法解析的外部符号 strerror_r，函数 main 中引用了该符号 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_78c7b.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj”(默认目标) (1) ->
+(Link 目标) -> 
+  CurlTests.obj : error LNK2019: 无法解析的外部符号 strerror_r，函数 main 中引用了该符号 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\cmTC_78c7b.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_78c7b.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.37
+
+
+Performing Curl Test HAVE_CLOCK_GETTIME_MONOTONIC failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e0bf8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:21。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e0bf8.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_e0bf8.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_e0bf8.dir\Debug\cmTC_e0bf8.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_e0bf8.dir\Debug\cmTC_e0bf8.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_e0bf8.dir\Debug\cmTC_e0bf8.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CLOCK_GETTIME_MONOTONIC /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e0bf8.dir\Debug\\" /Fd"cmTC_e0bf8.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CLOCK_GETTIME_MONOTONIC /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e0bf8.dir\Debug\\" /Fd"cmTC_e0bf8.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(440,32): error C2065: “CLOCK_MONOTONIC”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e0bf8.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e0bf8.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e0bf8.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(440,32): error C2065: “CLOCK_MONOTONIC”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_e0bf8.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:00.24
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: E:/vs_project/my_dns_cpp/curl-src/curl-8.2.1-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_29db1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+生成启动时间为 2023/9/9 22:35:22。
+
+节点 1 上的项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_29db1.dir\Debug\”。
+  正在创建目录“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_29db1.dir\Debug\cmTC_29db1.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_29db1.dir\Debug\cmTC_29db1.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+  正在对“cmTC_29db1.dir\Debug\cmTC_29db1.tlog\unsuccessfulbuild”执行 Touch 任务。
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "E:\vs_project\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Release"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_BUILTIN_AVAILABLE /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29db1.dir\Debug\\" /Fd"cmTC_29db1.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+  CurlTests.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /I"E:\vs_project\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_BUILTIN_AVAILABLE /D HAVE_WINDOWS_H /D HAVE_WS2TCPIP_H /D HAVE_WINSOCK2_H /D HAVE_WINCRYPT_H /D HAVE_INTTYPES_H /D HAVE_SYS_STAT_H /D HAVE_SYS_TYPES_H /D HAVE_SYS_UTIME_H /D HAVE_FCNTL_H /D HAVE_IO_H /D HAVE_LOCALE_H /D HAVE_SETJMP_H /D HAVE_SIGNAL_H /D HAVE_STDBOOL_H /D HAVE_STDINT_H /D HAVE_STDLIB_H /D HAVE_STRING_H /D HAVE_TIME_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29db1.dir\Debug\\" /Fd"cmTC_29db1.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c"
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,32): error C2065: “macOS”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,32): error C2143: 语法错误: 缺少“)”(在“常数”的前面) [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,40): error C2059: 语法错误:“)” [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,41): error C2059: 语法错误:“)” [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+已完成生成项目“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,32): error C2065: “macOS”: 未声明的标识符 [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,32): error C2143: 语法错误: 缺少“)”(在“常数”的前面) [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,40): error C2059: 语法错误:“)” [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+  E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1\CMake\CurlTests.c(447,41): error C2059: 语法错误:“)” [E:\vs_project\my_dns_cpp\curl-src\curl-8.2.1-build\CMakeFiles\CMakeTmp\cmTC_29db1.vcxproj]
+
+    0 个警告
+    4 个错误
+
+已用时间 00:00:00.26
+
+

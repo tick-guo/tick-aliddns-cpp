@@ -1,0 +1,578 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:72 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:72 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+      生成启动时间为 2023/9/10 2:14:29。
+      
+      节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdCXX.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        正在对“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”执行 Touch 任务。
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+        或批处理文件。
+        命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.85
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/3.26.4-msvc4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:72 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dvohc3"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dvohc3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dvohc3
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_90df8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:30。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\cmTC_90df8.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_90df8.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\Debug\\”。
+          正在创建目录“cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_90df8.dir\\Debug\\\\" /Fd"cmTC_90df8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          CMakeCXXCompilerABI.cpp
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_90df8.dir\\Debug\\\\" /Fd"cmTC_90df8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\Debug\\cmTC_90df8.exe" /INCREMENTAL /ILK:"cmTC_90df8.dir\\Debug\\cmTC_90df8.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dvohc3/Debug/cmTC_90df8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dvohc3/Debug/cmTC_90df8.lib" /MACHINE:X64  /machine:x64 cmTC_90df8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_90df8.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\Debug\\cmTC_90df8.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\Debug\\cmTC_90df8.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\cmTC_90df8.write.1u.tlog" "cmTC_90df8.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\Debug\\cmTC_90df8.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\cmTC_90df8.write.1u.tlog" "cmTC_90df8.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\Debug\\cmTC_90df8.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\cmTC_90df8.write.1u.tlog" "cmTC_90df8.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_90df8.dir\\Debug\\cmTC_90df8.tlog\\cmTC_90df8.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dvohc3\\cmTC_90df8.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.80
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake:94 (try_compile)"
+      - "src/lib_json/CMakeLists.txt:11 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include clocale"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-c3drx4"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-c3drx4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_CLOCALE"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-c3drx4
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_60278.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:32。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\cmTC_60278.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_60278.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\Debug\\”。
+          正在创建目录“cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_60278.dir\\Debug\\\\" /Fd"cmTC_60278.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\CheckIncludeFile.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckIncludeFile.cxx
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_60278.dir\\Debug\\\\" /Fd"cmTC_60278.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\CheckIncludeFile.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\Debug\\cmTC_60278.exe" /INCREMENTAL /ILK:"cmTC_60278.dir\\Debug\\cmTC_60278.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-c3drx4/Debug/cmTC_60278.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-c3drx4/Debug/cmTC_60278.lib" /MACHINE:X64  /machine:x64 cmTC_60278.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_60278.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\Debug\\cmTC_60278.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\Debug\\cmTC_60278.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\cmTC_60278.write.1u.tlog" "cmTC_60278.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\Debug\\cmTC_60278.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\cmTC_60278.write.1u.tlog" "cmTC_60278.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\Debug\\cmTC_60278.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\cmTC_60278.write.1u.tlog" "cmTC_60278.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_60278.dir\\Debug\\cmTC_60278.tlog\\cmTC_60278.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-c3drx4\\cmTC_60278.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.80
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckCXXSymbolExists.cmake:77 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/lib_json/CMakeLists.txt:12 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for localeconv"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dgq5mv"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dgq5mv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_LOCALECONV"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dgq5mv
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cbbbb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:33。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\cmTC_cbbbb.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_cbbbb.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\Debug\\”。
+          正在创建目录“cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_cbbbb.dir\\Debug\\\\" /Fd"cmTC_cbbbb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\CheckSymbolExists.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CheckSymbolExists.cxx
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_cbbbb.dir\\Debug\\\\" /Fd"cmTC_cbbbb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\CheckSymbolExists.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\Debug\\cmTC_cbbbb.exe" /INCREMENTAL /ILK:"cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dgq5mv/Debug/cmTC_cbbbb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-dgq5mv/Debug/cmTC_cbbbb.lib" /MACHINE:X64  /machine:x64 cmTC_cbbbb.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_cbbbb.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\Debug\\cmTC_cbbbb.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\Debug\\cmTC_cbbbb.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\cmTC_cbbbb.write.1u.tlog" "cmTC_cbbbb.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\Debug\\cmTC_cbbbb.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\cmTC_cbbbb.write.1u.tlog" "cmTC_cbbbb.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\Debug\\cmTC_cbbbb.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\cmTC_cbbbb.write.1u.tlog" "cmTC_cbbbb.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_cbbbb.dir\\Debug\\cmTC_cbbbb.tlog\\cmTC_cbbbb.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-dgq5mv\\cmTC_cbbbb.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.78
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake:94 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckTypeSize.cmake:256 (check_include_file_cxx)"
+      - "src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Looking for C++ include sys/types.h"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-q6d0vi"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-q6d0vi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-q6d0vi
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_33c4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:33。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\cmTC_33c4b.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_33c4b.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\Debug\\”。
+          正在创建目录“cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_33c4b.dir\\Debug\\\\" /Fd"cmTC_33c4b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\CheckIncludeFile.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          CheckIncludeFile.cxx
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_33c4b.dir\\Debug\\\\" /Fd"cmTC_33c4b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\CheckIncludeFile.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\Debug\\cmTC_33c4b.exe" /INCREMENTAL /ILK:"cmTC_33c4b.dir\\Debug\\cmTC_33c4b.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-q6d0vi/Debug/cmTC_33c4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-q6d0vi/Debug/cmTC_33c4b.lib" /MACHINE:X64  /machine:x64 cmTC_33c4b.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_33c4b.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\Debug\\cmTC_33c4b.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\Debug\\cmTC_33c4b.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\cmTC_33c4b.write.1u.tlog" "cmTC_33c4b.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\Debug\\cmTC_33c4b.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\cmTC_33c4b.write.1u.tlog" "cmTC_33c4b.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\Debug\\cmTC_33c4b.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\cmTC_33c4b.write.1u.tlog" "cmTC_33c4b.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_33c4b.dir\\Debug\\cmTC_33c4b.tlog\\cmTC_33c4b.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-q6d0vi\\cmTC_33c4b.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.81
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake:94 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckTypeSize.cmake:261 (check_include_file_cxx)"
+      - "src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Looking for C++ include stdint.h"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-8f0fen"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-8f0fen"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-8f0fen
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e6e7f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:34。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\cmTC_e6e7f.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_e6e7f.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\Debug\\”。
+          正在创建目录“cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e6e7f.dir\\Debug\\\\" /Fd"cmTC_e6e7f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\CheckIncludeFile.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          CheckIncludeFile.cxx
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e6e7f.dir\\Debug\\\\" /Fd"cmTC_e6e7f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\CheckIncludeFile.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\Debug\\cmTC_e6e7f.exe" /INCREMENTAL /ILK:"cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-8f0fen/Debug/cmTC_e6e7f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-8f0fen/Debug/cmTC_e6e7f.lib" /MACHINE:X64  /machine:x64 cmTC_e6e7f.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_e6e7f.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\Debug\\cmTC_e6e7f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\Debug\\cmTC_e6e7f.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\cmTC_e6e7f.write.1u.tlog" "cmTC_e6e7f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\Debug\\cmTC_e6e7f.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\cmTC_e6e7f.write.1u.tlog" "cmTC_e6e7f.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\Debug\\cmTC_e6e7f.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\cmTC_e6e7f.write.1u.tlog" "cmTC_e6e7f.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_e6e7f.dir\\Debug\\cmTC_e6e7f.tlog\\cmTC_e6e7f.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-8f0fen\\cmTC_e6e7f.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.80
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake:94 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckTypeSize.cmake:262 (check_include_file_cxx)"
+      - "src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Looking for C++ include stddef.h"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-sbdrag"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-sbdrag"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-sbdrag
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_144ad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:35。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\cmTC_144ad.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_144ad.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\Debug\\”。
+          正在创建目录“cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_144ad.dir\\Debug\\\\" /Fd"cmTC_144ad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\CheckIncludeFile.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          CheckIncludeFile.cxx
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_144ad.dir\\Debug\\\\" /Fd"cmTC_144ad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\CheckIncludeFile.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\Debug\\cmTC_144ad.exe" /INCREMENTAL /ILK:"cmTC_144ad.dir\\Debug\\cmTC_144ad.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-sbdrag/Debug/cmTC_144ad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-sbdrag/Debug/cmTC_144ad.lib" /MACHINE:X64  /machine:x64 cmTC_144ad.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_144ad.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\Debug\\cmTC_144ad.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\Debug\\cmTC_144ad.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\cmTC_144ad.write.1u.tlog" "cmTC_144ad.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\Debug\\cmTC_144ad.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\cmTC_144ad.write.1u.tlog" "cmTC_144ad.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\Debug\\cmTC_144ad.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\cmTC_144ad.write.1u.tlog" "cmTC_144ad.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_144ad.dir\\Debug\\cmTC_144ad.tlog\\cmTC_144ad.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-sbdrag\\cmTC_144ad.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.79
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Check size of lconv"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-otnkti"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-otnkti"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_LCONV_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-otnkti
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_24071.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:36。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\cmTC_24071.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_24071.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\Debug\\”。
+          正在创建目录“cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_24071.dir\\Debug\\\\" /Fd"cmTC_24071.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\LCONV_SIZE.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          LCONV_SIZE.cpp
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_24071.dir\\Debug\\\\" /Fd"cmTC_24071.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\LCONV_SIZE.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\Debug\\cmTC_24071.exe" /INCREMENTAL /ILK:"cmTC_24071.dir\\Debug\\cmTC_24071.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-otnkti/Debug/cmTC_24071.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-otnkti/Debug/cmTC_24071.lib" /MACHINE:X64  /machine:x64 cmTC_24071.dir\\Debug\\LCONV_SIZE.obj
+          cmTC_24071.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\Debug\\cmTC_24071.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\Debug\\cmTC_24071.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\cmTC_24071.write.1u.tlog" "cmTC_24071.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\Debug\\cmTC_24071.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\cmTC_24071.write.1u.tlog" "cmTC_24071.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\Debug\\cmTC_24071.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\cmTC_24071.write.1u.tlog" "cmTC_24071.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_24071.dir\\Debug\\cmTC_24071.tlog\\cmTC_24071.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-otnkti\\cmTC_24071.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.78
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckStructHasMember.cmake:83 (CHECK_CXX_SOURCE_COMPILES)"
+      - "src/lib_json/CMakeLists.txt:17 (check_struct_has_member)"
+    checks:
+      - "Performing Test HAVE_DECIMAL_POINT"
+    directories:
+      source: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-1v69i8"
+      binary: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-1v69i8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5/cmake"
+    buildResult:
+      variable: "HAVE_DECIMAL_POINT"
+      cached: true
+      stdout: |
+        Change Dir: E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-1v69i8
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2f0cc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+        生成启动时间为 2023/9/10 2:14:37。
+        
+        节点 1 上的项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\cmTC_2f0cc.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_2f0cc.dir\\Debug\\”。
+          正在创建目录“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\Debug\\”。
+          正在创建目录“cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "E:\\vs_project\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_DECIMAL_POINT /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2f0cc.dir\\Debug\\\\" /Fd"cmTC_2f0cc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\src.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+          src.cxx
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /I"E:\\vs_project\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_DECIMAL_POINT /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2f0cc.dir\\Debug\\\\" /Fd"cmTC_2f0cc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\Debug\\cmTC_2f0cc.exe" /INCREMENTAL /ILK:"cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.ilk" /NOLOGO /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "E:\\vs_project\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-1v69i8/Debug/cmTC_2f0cc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/vs_project/aliddns_cpp_all/jsoncpp-src/jsoncpp-1.9.5-build/CMakeFiles/CMakeScratch/TryCompile-1v69i8/Debug/cmTC_2f0cc.lib" /MACHINE:X64  /machine:x64 cmTC_2f0cc.dir\\Debug\\src.obj
+          cmTC_2f0cc.vcxproj -> E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\Debug\\cmTC_2f0cc.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\Debug\\cmTC_2f0cc.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\cmTC_2f0cc.write.1u.tlog" "cmTC_2f0cc.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+          或批处理文件。
+          命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\Debug\\cmTC_2f0cc.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\cmTC_2f0cc.write.1u.tlog" "cmTC_2f0cc.dir\\Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\\vs_project\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\Debug\\cmTC_2f0cc.exe" "E:\\vs_project\\vcpkg\\installed\\x64-windows\\bin" "cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\cmTC_2f0cc.write.1u.tlog" "cmTC_2f0cc.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_2f0cc.dir\\Debug\\cmTC_2f0cc.tlog\\cmTC_2f0cc.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\vs_project\\aliddns_cpp_all\\jsoncpp-src\\jsoncpp-1.9.5-build\\CMakeFiles\\CMakeScratch\\TryCompile-1v69i8\\cmTC_2f0cc.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.74
+        
+      exitCode: 0
+...
