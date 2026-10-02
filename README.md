@@ -17,6 +17,7 @@ aliddns_cpp.exe start            start the service: AliddnsAutoUpdate
 ```
 ### 编译软件
 1. vs2022
+2. 2026/10/02 更新为 vs2026 , v145 for Microsoft C++ Build Tools
 
 编译结果
 ``` 
