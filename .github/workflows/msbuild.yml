@@ -22,7 +22,7 @@ env:
   BUILD_Platform: x64
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
