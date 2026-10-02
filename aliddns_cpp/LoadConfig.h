@@ -29,7 +29,12 @@ public:
 	//int	LogFileFlag;
 	//# 探测本机公共ip的服务器,可以不配置,有内部默认值,默认服务器挂了,可以设置新的服务器
 	string Ip4Url; //= https://api-ipv4.ip.sb/ip
+	int Ip4FasterFlag = 0;
+
+
 	string	Ip6Url; //= https://api6.ipify.org
+	int Ip6FasterFlag = 0;
+
 	int timeInterval;
 	int LogLevel;
 

@@ -13,7 +13,9 @@ string KEY_Domain = "Domain";
 string KEY_NameIpv4 = "NameIpv4";
 string KEY_NameIpv6 = "NameIpv6";
 string KEY_Ip4Url = "Ip4Url";
+string KEY_Ip4FasterFlag = "Ip4FasterFlag";
 string KEY_Ip6Url = "Ip6Url";
+string KEY_Ip6FasterFlag = "Ip6FasterFlag";
 string KEY_TimeInterval = "TimeInterval";
 string KEY_LogLevel = "LogLevel";
 
@@ -48,8 +50,14 @@ DnsConfig::DnsConfig()
 	root[KEY_NameIpv6].setComment(string("//要进行ipv6 ddns解析的子域名"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Ip4Url] = this->Ip4Url;
 	root[KEY_Ip4Url].setComment(string("//探测本机公共ipv4的服务器,可以不配置,有内部默认值,默认服务器挂了,可以设置新的服务器"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ip4FasterFlag] = this->Ip4FasterFlag;
+	root[KEY_Ip4FasterFlag].setComment(string("//配置0(默认), 1 ; 快速获取本机ip的方式, 如果没有公网ip,或有vpn,快速模式不准确,需要设置0"), Json::CommentPlacement::commentAfterOnSameLine);
+
 	root[KEY_Ip6Url] = this->Ip6Url;
 	root[KEY_Ip6Url].setComment(string("//探测本机公共ipv6的服务器,可以不配置,有内部默认值,默认服务器挂了,可以设置新的服务器"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ip6FasterFlag] = this->Ip6FasterFlag;
+	root[KEY_Ip6FasterFlag].setComment(string("//配置0(默认), 1 ; 快速获取本机ip的方式, 如果没有公网ip,或有vpn,快速模式不准确,需要设置0"), Json::CommentPlacement::commentAfterOnSameLine);
+
 	root[KEY_TimeInterval] = this->timeInterval;
 	root[KEY_TimeInterval].setComment(string("//检测ip变化的时间间隔,默认30秒"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_LogLevel] = this->LogLevel;
@@ -145,6 +153,14 @@ void LoadConfig::readConfig()
 	if (root.isMember(KEY_Ip6Url))
 	{
 		dnsConfig.Ip6Url = root[KEY_Ip6Url].asString();
+	}
+	if (root.isMember(KEY_Ip4FasterFlag))
+	{
+		dnsConfig.Ip4FasterFlag = root[KEY_Ip4FasterFlag].asString();
+	}
+	if (root.isMember(KEY_Ip6FasterFlag))
+	{
+		dnsConfig.Ip6FasterFlag = root[KEY_Ip6FasterFlag].asString();
 	}
 	if (root.isMember(KEY_TimeInterval) && root[KEY_TimeInterval].isInt())
 	{

@@ -150,8 +150,8 @@ string getPublicIpLegacy(string& url, IpType type) {
 	return ip;
 }
 
-string getPublicIp(string& url, IpType type) {
-	if (type == IpType::IP_V6) {
+string getPublicIp(string& url, IpType type, int fasterFlag = 0 ) {
+	if (fasterFlag) {
 		return getPublicIpFaster(url, type);
 	}
 	else {
@@ -186,7 +186,7 @@ void DnsOp::thread_function()
 		}
 
 		if (dnsConfig.Ipv4Flag) {
-			ipv4 = getPublicIp(dnsConfig.Ip4Url, IpType::IP_V4);
+			ipv4 = getPublicIp(dnsConfig.Ip4Url, IpType::IP_V4, dnsConfig.Ip4FasterFlag);
 			if (ipv4.empty()) {
 				log_info("ipv4获取失败");
 			}
@@ -212,7 +212,7 @@ void DnsOp::thread_function()
 			}
 		}
 		if (dnsConfig.Ipv6Flag) {
-			ipv6 = getPublicIp(dnsConfig.Ip6Url, IpType::IP_V6);
+			ipv6 = getPublicIp(dnsConfig.Ip6Url, IpType::IP_V6, dnsConfig.Ip4FasterFlag);
 			if (ipv6.empty()) {
 				log_info("ipv6获取失败");
 			}
