@@ -156,11 +156,11 @@ void LoadConfig::readConfig()
 	}
 	if (root.isMember(KEY_Ip4FasterFlag))
 	{
-		dnsConfig.Ip4FasterFlag = root[KEY_Ip4FasterFlag].asString();
+		dnsConfig.Ip4FasterFlag = root[KEY_Ip4FasterFlag].asInt();
 	}
 	if (root.isMember(KEY_Ip6FasterFlag))
 	{
-		dnsConfig.Ip6FasterFlag = root[KEY_Ip6FasterFlag].asString();
+		dnsConfig.Ip6FasterFlag = root[KEY_Ip6FasterFlag].asInt();
 	}
 	if (root.isMember(KEY_TimeInterval) && root[KEY_TimeInterval].isInt())
 	{

@@ -18,4 +18,15 @@ aliddns_cpp.exe start            start the service: AliddnsAutoUpdate
 ### 编译软件
 1. vs2022
 
+编译结果
+``` 
+ Directory of D:\a\tick-aliddns-cpp\tick-aliddns-cpp\x64\Release
 
+10/02/2026  04:18 AM    <DIR>          .
+10/02/2026  04:17 AM    <DIR>          ..
+10/02/2026  04:18 AM        53,293,090 AliddnsLib.lib
+10/02/2026  04:18 AM         2,494,464 AliddnsLib.pdb
+10/02/2026  04:18 AM           840,192 aliddns_cpp.exe
+10/02/2026  04:18 AM         4,886,528 aliddns_cpp.pdb
+               4 File(s)     61,514,274 bytes
+```

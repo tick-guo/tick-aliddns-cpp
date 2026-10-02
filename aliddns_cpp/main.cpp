@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include "version.h"
 #include "ServiceHelper.h"
 #include "LogHelper.h"
 #include "DnsOp.h"
@@ -68,7 +69,7 @@ static LIB_AUTO_INIT curl_init_done;
 *
 *
 */
-static string VERSION_NOTICE = "aliddns v2.8 build 20240313 by tick_guo";
+static string VERSION_NOTICE = dns::APP_NAME + " " + dns::APP_VERSION + " build " + dns::APP_BUILD_DATE + " by tick_guo";
 
 int main(int argc, char* argv[])
 {
