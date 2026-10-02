@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 
 */
 #include <windows.h>
@@ -766,7 +766,7 @@ VOID WINAPI SvcMain(DWORD dwArgc, LPTSTR* lpszArgv)
 }
 
 void todo_user_work() {
-	// ÓÃ»§³ÌĞò
+	// ç”¨æˆ·ç¨‹åº
 	DnsOp dnsOp;
 	// Check whether to stop the service.
 	WaitForSingleObject(ghSvcStopEvent, INFINITE);
@@ -813,9 +813,9 @@ VOID SvcInit(DWORD dwArgc, LPTSTR* lpszArgv)
 	// TO_DO: Perform work until service stops.
 	todo_user_work();
 
-	//±ØĞëÔÚÉèÖÃstoppedÇ°,Íê³É¶ÔÏóÎö¹¹,·ñÔòÎŞ·¨Îö¹¹Íê³É,³ÌĞò»á±»É±ËÀ
+	//å¿…é¡»åœ¨è®¾ç½®stoppedå‰,å®Œæˆå¯¹è±¡ææ„,å¦åˆ™æ— æ³•ææ„å®Œæˆ,ç¨‹åºä¼šè¢«æ€æ­»
 	ReportSvcStatus(SERVICE_STOPPED, NO_ERROR, 0);
-	log_debug("ÉèÖÃ'ÒÑÍ£Ö¹'×´Ì¬");
+	log_debug("è®¾ç½®'å·²åœæ­¢'çŠ¶æ€");
 	return;
 }
 
@@ -878,7 +878,7 @@ VOID WINAPI SvcCtrlHandler(DWORD dwCtrl)
 		ReportSvcStatus(SERVICE_STOP_PENDING, NO_ERROR, 30 * 1000);
 
 		// Signal the service to stop.
-		//log_info("ÊÕµ½ÍË³öÖ¸Áî");
+		//log_info("æ”¶åˆ°é€€å‡ºæŒ‡ä»¤");
 
 		SetEvent(ghSvcStopEvent);
 		//ReportSvcStatus(gSvcStatus.dwCurrentState, NO_ERROR, 0);

@@ -69,7 +69,7 @@ static LIB_AUTO_INIT curl_init_done;
 *
 *
 */
-static string VERSION_NOTICE = dns::APP_NAME + " " + dns::APP_VERSION + " build " + dns::APP_BUILD_DATE + " by tick_guo";
+static string VERSION_NOTICE = dns::APP_NAME + " " + dns::APP_VERSION + " build " + dns::APP_BUILD_DATE + " by tick_guo"; 
 
 int main(int argc, char* argv[])
 {

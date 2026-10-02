@@ -1,4 +1,4 @@
-
+ï»¿
 #include "CommonUtil.h"
 #include <Windows.h>
 #include "LogHelper.h"
@@ -12,20 +12,20 @@ std::string GetLastErrorMsg(unsigned long errCode)
 {
 	std::string err;
 	LPTSTR lpBuffer = NULL;
-	if (0 == FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS, //±êÖ¾Î»£¬¾ö¶¨ÈçºÎËµÃ÷lpSource²ÎÊý£¬dwFlagsµÄµÍÎ»Ö¸¶¨ÈçºÎ´¦Àí»»ÐÐ¹¦ÄÜÔÚÊä³ö»º³åÇø£¬Ò²¾ö¶¨×î´ó¿í¶ÈµÄ¸ñÊ½»¯Êä³öÐÐ,¿ÉÑ¡²ÎÊý¡£
-		NULL,//¸ù¾ÝdwFlags±êÖ¾¶ø¶¨¡£
-		errCode,//ÇëÇóµÄÏûÏ¢µÄ±êÊ¶·û¡£µ±dwFlags±êÖ¾ÎªFORMAT_MESSAGE_FROM_STRINGÊ±»á±»ºöÂÔ¡£
-		MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),//ÇëÇóµÄÏûÏ¢µÄÓïÑÔ±êÊ¶·û¡£
-		(LPTSTR)&lpBuffer,//½ÓÊÕ´íÎóÐÅÏ¢ÃèÊöµÄ»º³åÇøÖ¸Õë¡£
-		0,//Èç¹ûFORMAT_MESSAGE_ALLOCATE_BUFFER±êÖ¾Ã»ÓÐ±»Ö¸¶¨£¬Õâ¸ö²ÎÊý±ØÐëÖ¸¶¨ÎªÊä³ö»º³åÇøµÄ´óÐ¡£¬Èç¹ûÖ¸¶¨ÖµÎª0£¬Õâ¸ö²ÎÊýÖ¸¶¨Îª·ÖÅä¸øÊä³ö»º³åÇøµÄ×îÐ¡Êý¡£
-		NULL//±£´æ¸ñÊ½»¯ÐÅÏ¢ÖÐµÄ²åÈëÖµµÄÒ»¸öÊý×é¡£
+	if (0 == FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS, //æ ‡å¿—ä½ï¼Œå†³å®šå¦‚ä½•è¯´æ˜ŽlpSourceå‚æ•°ï¼ŒdwFlagsçš„ä½Žä½æŒ‡å®šå¦‚ä½•å¤„ç†æ¢è¡ŒåŠŸèƒ½åœ¨è¾“å‡ºç¼“å†²åŒºï¼Œä¹Ÿå†³å®šæœ€å¤§å®½åº¦çš„æ ¼å¼åŒ–è¾“å‡ºè¡Œ,å¯é€‰å‚æ•°ã€‚
+		NULL,//æ ¹æ®dwFlagsæ ‡å¿—è€Œå®šã€‚
+		errCode,//è¯·æ±‚çš„æ¶ˆæ¯çš„æ ‡è¯†ç¬¦ã€‚å½“dwFlagsæ ‡å¿—ä¸ºFORMAT_MESSAGE_FROM_STRINGæ—¶ä¼šè¢«å¿½ç•¥ã€‚
+		MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),//è¯·æ±‚çš„æ¶ˆæ¯çš„è¯­è¨€æ ‡è¯†ç¬¦ã€‚
+		(LPTSTR)&lpBuffer,//æŽ¥æ”¶é”™è¯¯ä¿¡æ¯æè¿°çš„ç¼“å†²åŒºæŒ‡é’ˆã€‚
+		0,//å¦‚æžœFORMAT_MESSAGE_ALLOCATE_BUFFERæ ‡å¿—æ²¡æœ‰è¢«æŒ‡å®šï¼Œè¿™ä¸ªå‚æ•°å¿…é¡»æŒ‡å®šä¸ºè¾“å‡ºç¼“å†²åŒºçš„å¤§å°ï¼Œå¦‚æžœæŒ‡å®šå€¼ä¸º0ï¼Œè¿™ä¸ªå‚æ•°æŒ‡å®šä¸ºåˆ†é…ç»™è¾“å‡ºç¼“å†²åŒºçš„æœ€å°æ•°ã€‚
+		NULL//ä¿å­˜æ ¼å¼åŒ–ä¿¡æ¯ä¸­çš„æ’å…¥å€¼çš„ä¸€ä¸ªæ•°ç»„ã€‚
 	))
-	{//Ê§°Ü
+	{//å¤±è´¥
 		char tmp[100] = { 0 };
-		sprintf_s(tmp, "{Î´¶¨Òå´íÎóÃèÊö(%d)}", errCode);
+		sprintf_s(tmp, "{æœªå®šä¹‰é”™è¯¯æè¿°(%d)}", errCode);
 		err = tmp;
 	}
-	else//³É¹¦
+	else//æˆåŠŸ
 	{
 		//USES_CONVERSION;
 		//err = W2A(lpBuffer);
@@ -37,7 +37,7 @@ std::string GetLastErrorMsg(unsigned long errCode)
 
 
 /*
-* Ö´ÐÐÎÄ¼þµÄÍêÈ«Â·¾¶,°üº¬exeºó×º
+* æ‰§è¡Œæ–‡ä»¶çš„å®Œå…¨è·¯å¾„,åŒ…å«exeåŽç¼€
 */
 string getProgramFullPath() {
 	static string path;
@@ -125,9 +125,9 @@ bool check_https_support() {
 
 
 
-//ÓÃÓÚ¼ÆËãÊ±¼ä²î,¶ø²»ÊÇ¼ÆËãÄêÔÂÈÕ
+//ç”¨äºŽè®¡ç®—æ—¶é—´å·®,è€Œä¸æ˜¯è®¡ç®—å¹´æœˆæ—¥
 long long get_boot_millisecond() {
-	//¼ìË÷×ÔÏµÍ³Æô¶¯ÒÔÀ´¾­¹ýµÄºÁÃëÊý, ²»ÊÜÏµÍ³Ê±¼äµ÷ÕûµÄÓ°Ïì
+	//æ£€ç´¢è‡ªç³»ç»Ÿå¯åŠ¨ä»¥æ¥ç»è¿‡çš„æ¯«ç§’æ•°, ä¸å—ç³»ç»Ÿæ—¶é—´è°ƒæ•´çš„å½±å“
 	return GetTickCount64();
 }
 
@@ -139,7 +139,7 @@ bool check_is_remove(char n) {
 	return false;
 }
 
-//É¾³ý¿Õ¸ñ, ²»½öÊÇÊ×Î², ÖÐ¼äµÄÒ²»áÉ¾³ý
+//åˆ é™¤ç©ºæ ¼, ä¸ä»…æ˜¯é¦–å°¾, ä¸­é—´çš„ä¹Ÿä¼šåˆ é™¤
 string string_remove_blank(string val) {
 	auto end = remove_if(val.begin(), val.end(), check_is_remove);
 	val.erase(end, val.end());

@@ -1,4 +1,4 @@
-#include "LogHelper.h"
+ï»¿#include "LogHelper.h"
 #include <time.h>
 
 
@@ -26,7 +26,7 @@ void LogHelper::log(const char* str)
 		file.flush();
 	}
 	else {
-		//strÒÑ¾­°üº¬»»ĞĞ·û
+		//strå·²ç»åŒ…å«æ¢è¡Œç¬¦
 		std::cout << str;
 	}
 }

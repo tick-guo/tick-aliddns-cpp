@@ -35,22 +35,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ServiceHelper.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DnsOp.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="LogHelper.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="LoadConfig.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="version.h">
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CommonUtil.h">
-      <Filter>源文件</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="version.h">
+    <ClInclude Include="DnsOp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceHelper.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

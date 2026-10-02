@@ -1,4 +1,4 @@
-
+ï»¿
 #include "LoadConfig.h"
 #include "LogHelper.h"
 #include "CommonUtil.h"
@@ -35,33 +35,33 @@ DnsConfig::DnsConfig()
 
 	//
 	root[KEY_AccessKeyId] = this->AccessKeyId;
-	root[KEY_AccessKeyId].setComment(string("//½«accessKeyId¸Ä³É×Ô¼ºµÄaccessKeyId"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_AccessKeyId].setComment(string("//å°†accessKeyIdæ”¹æˆè‡ªå·±çš„accessKeyId"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_AccessSecret] = this->AccessSecret;
-	root[KEY_AccessSecret].setComment(string("//½«accessSecret¸Ä³É×Ô¼ºµÄaccessSecret"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_AccessSecret].setComment(string("//å°†accessSecretæ”¹æˆè‡ªå·±çš„accessSecret"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Ipv4Flag] = this->Ipv4Flag;
-	root[KEY_Ipv4Flag].setComment(string("//ÊÇ·ñ¿ªÆôipv4 ddns½âÎö,1Îª¿ªÆô£¬0Îª¹Ø±Õ"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ipv4Flag].setComment(string("//æ˜¯å¦å¼€å¯ipv4 ddnsè§£æ,1ä¸ºå¼€å¯ï¼Œ0ä¸ºå…³é—­"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Ipv6Flag] = this->Ipv6Flag;
-	root[KEY_Ipv6Flag].setComment(string("//ÊÇ·ñ¿ªÆôipv6 ddns½âÎö,1Îª¿ªÆô£¬0Îª¹Ø±Õ"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ipv6Flag].setComment(string("//æ˜¯å¦å¼€å¯ipv6 ddnsè§£æ,1ä¸ºå¼€å¯ï¼Œ0ä¸ºå…³é—­"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Domain] = this->Domain;
-	root[KEY_Domain].setComment(string("//ÄãµÄÖ÷ÓòÃû"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Domain].setComment(string("//ä½ çš„ä¸»åŸŸå"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_NameIpv4] = this->NameIpv4;
-	root[KEY_NameIpv4].setComment(string("//Òª½øĞĞipv4 ddns½âÎöµÄ×ÓÓòÃû"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_NameIpv4].setComment(string("//è¦è¿›è¡Œipv4 ddnsè§£æçš„å­åŸŸå"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_NameIpv6] = this->NameIpv6;
-	root[KEY_NameIpv6].setComment(string("//Òª½øĞĞipv6 ddns½âÎöµÄ×ÓÓòÃû"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_NameIpv6].setComment(string("//è¦è¿›è¡Œipv6 ddnsè§£æçš„å­åŸŸå"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Ip4Url] = this->Ip4Url;
-	root[KEY_Ip4Url].setComment(string("//Ì½²â±¾»ú¹«¹²ipv4µÄ·şÎñÆ÷,¿ÉÒÔ²»ÅäÖÃ,ÓĞÄÚ²¿Ä¬ÈÏÖµ,Ä¬ÈÏ·şÎñÆ÷¹ÒÁË,¿ÉÒÔÉèÖÃĞÂµÄ·şÎñÆ÷"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ip4Url].setComment(string("//æ¢æµ‹æœ¬æœºå…¬å…±ipv4çš„æœåŠ¡å™¨,å¯ä»¥ä¸é…ç½®,æœ‰å†…éƒ¨é»˜è®¤å€¼,é»˜è®¤æœåŠ¡å™¨æŒ‚äº†,å¯ä»¥è®¾ç½®æ–°çš„æœåŠ¡å™¨"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Ip4FasterFlag] = this->Ip4FasterFlag;
-	root[KEY_Ip4FasterFlag].setComment(string("//ÅäÖÃ0(Ä¬ÈÏ), 1 ; ¿ìËÙ»ñÈ¡±¾»úipµÄ·½Ê½, Èç¹ûÃ»ÓĞ¹«Íøip,»òÓĞvpn,¿ìËÙÄ£Ê½²»×¼È·,ĞèÒªÉèÖÃ0"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ip4FasterFlag].setComment(string("//é…ç½®0(é»˜è®¤), 1 ; å¿«é€Ÿè·å–æœ¬æœºipçš„æ–¹å¼, å¦‚æœæ²¡æœ‰å…¬ç½‘ip,æˆ–æœ‰vpn,å¿«é€Ÿæ¨¡å¼ä¸å‡†ç¡®,éœ€è¦è®¾ç½®0"), Json::CommentPlacement::commentAfterOnSameLine);
 
 	root[KEY_Ip6Url] = this->Ip6Url;
-	root[KEY_Ip6Url].setComment(string("//Ì½²â±¾»ú¹«¹²ipv6µÄ·şÎñÆ÷,¿ÉÒÔ²»ÅäÖÃ,ÓĞÄÚ²¿Ä¬ÈÏÖµ,Ä¬ÈÏ·şÎñÆ÷¹ÒÁË,¿ÉÒÔÉèÖÃĞÂµÄ·şÎñÆ÷"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ip6Url].setComment(string("//æ¢æµ‹æœ¬æœºå…¬å…±ipv6çš„æœåŠ¡å™¨,å¯ä»¥ä¸é…ç½®,æœ‰å†…éƒ¨é»˜è®¤å€¼,é»˜è®¤æœåŠ¡å™¨æŒ‚äº†,å¯ä»¥è®¾ç½®æ–°çš„æœåŠ¡å™¨"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_Ip6FasterFlag] = this->Ip6FasterFlag;
-	root[KEY_Ip6FasterFlag].setComment(string("//ÅäÖÃ0(Ä¬ÈÏ), 1 ; ¿ìËÙ»ñÈ¡±¾»úipµÄ·½Ê½, Èç¹ûÃ»ÓĞ¹«Íøip,»òÓĞvpn,¿ìËÙÄ£Ê½²»×¼È·,ĞèÒªÉèÖÃ0"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_Ip6FasterFlag].setComment(string("//é…ç½®0(é»˜è®¤), 1 ; å¿«é€Ÿè·å–æœ¬æœºipçš„æ–¹å¼, å¦‚æœæ²¡æœ‰å…¬ç½‘ip,æˆ–æœ‰vpn,å¿«é€Ÿæ¨¡å¼ä¸å‡†ç¡®,éœ€è¦è®¾ç½®0"), Json::CommentPlacement::commentAfterOnSameLine);
 
 	root[KEY_TimeInterval] = this->timeInterval;
-	root[KEY_TimeInterval].setComment(string("//¼ì²âip±ä»¯µÄÊ±¼ä¼ä¸ô,Ä¬ÈÏ30Ãë"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_TimeInterval].setComment(string("//æ£€æµ‹ipå˜åŒ–çš„æ—¶é—´é—´éš”,é»˜è®¤30ç§’"), Json::CommentPlacement::commentAfterOnSameLine);
 	root[KEY_LogLevel] = this->LogLevel;
-	root[KEY_LogLevel].setComment(string("//log¼¶±ğ, Ä¬ÈÏ0: ÉÙÁ¿log, 1: ¸üÏêÏ¸µÄlog"), Json::CommentPlacement::commentAfterOnSameLine);
+	root[KEY_LogLevel].setComment(string("//logçº§åˆ«, é»˜è®¤0: å°‘é‡log, 1: æ›´è¯¦ç»†çš„log"), Json::CommentPlacement::commentAfterOnSameLine);
 
 }
 
@@ -85,7 +85,7 @@ void LoadConfig::createDefaultJson()
 	fstream file;
 	file.open(path, std::ios::trunc | std::ios::out);
 	if (!file.is_open()) {
-		log_info("ÅäÖÃÎÄ¼ş´ò¿ªÊ§°Ü:%s", path.c_str());
+		log_info("é…ç½®æ–‡ä»¶æ‰“å¼€å¤±è´¥:%s", path.c_str());
 		return;
 	}
 
@@ -98,7 +98,7 @@ void LoadConfig::readConfig()
 {
 	Json::Reader reader;
 	if (!chenkFileExist(path)) {
-		log_info("ÅäÖÃÎÄ¼ş²»´æÔÚ,´´½¨Ä¬ÈÏÅäÖÃÎÄ¼ş");
+		log_info("é…ç½®æ–‡ä»¶ä¸å­˜åœ¨,åˆ›å»ºé»˜è®¤é…ç½®æ–‡ä»¶");
 		this->createDefaultJson();
 	}
 
@@ -106,7 +106,7 @@ void LoadConfig::readConfig()
 	Json::Value root;
 	reader.parse(f, root, true);
 
-	int need_update = 0;//Èç¹ûÓĞÈ±ÉÙµÄÔªËØ,ÔòĞèÒª¸üĞÂÎÄ¼ş
+	int need_update = 0;//å¦‚æœæœ‰ç¼ºå°‘çš„å…ƒç´ ,åˆ™éœ€è¦æ›´æ–°æ–‡ä»¶
 	DnsConfig default_value;
 	Json::Value defultJson = default_value.getDefaultJson();
 	auto members = defultJson.getMemberNames();
@@ -114,7 +114,7 @@ void LoadConfig::readConfig()
 		if (!root.isMember(members[i])) {
 			need_update++;
 			root[members[i]] = defultJson[members[i]];
-			log_info("ÅäÖÃÎÄ¼şÃ»ÓĞ %s = %s ,×Ô¶¯Ìí¼Ó", members[i].c_str(), root[members[i]].asString().c_str());
+			log_info("é…ç½®æ–‡ä»¶æ²¡æœ‰ %s = %s ,è‡ªåŠ¨æ·»åŠ ", members[i].c_str(), root[members[i]].asString().c_str());
 		}
 	}
 
@@ -167,7 +167,7 @@ void LoadConfig::readConfig()
 		dnsConfig.timeInterval = root[KEY_TimeInterval].asInt();
 		if (dnsConfig.timeInterval <= 0) {
 			dnsConfig.timeInterval = default_value.timeInterval;
-			log_info("ÅäÖÃµÄÊ±¼ä¼ä¸ô<=0, Ê¹ÓÃÄ¬ÈÏÖµ:%d", dnsConfig.timeInterval);
+			log_info("é…ç½®çš„æ—¶é—´é—´éš”<=0, ä½¿ç”¨é»˜è®¤å€¼:%d", dnsConfig.timeInterval);
 			root[KEY_TimeInterval] = defultJson[KEY_TimeInterval];;
 			need_update++;
 		}
@@ -175,14 +175,14 @@ void LoadConfig::readConfig()
 	if (root.isMember(KEY_LogLevel) && root[KEY_LogLevel].isInt())
 	{
 		dnsConfig.LogLevel = root[KEY_LogLevel].asInt();
-		//ÑÓ³ÙÉúĞ§
+		//å»¶è¿Ÿç”Ÿæ•ˆ
 		gLogLevel = dnsConfig.LogLevel;
 	}
 
 	if (need_update) {
 		fstream file;
 		file.open(path, std::ios::trunc | std::ios::out);
-		log_info("²¿·ÖÅäÖÃÏî²»´æÔÚ,Ë¢ĞÂÅäÖÃÎÄ¼ş");
+		log_info("éƒ¨åˆ†é…ç½®é¡¹ä¸å­˜åœ¨,åˆ·æ–°é…ç½®æ–‡ä»¶");
 		Json::StyledStreamWriter jsWrite;
 		jsWrite.write(file, root);
 	}

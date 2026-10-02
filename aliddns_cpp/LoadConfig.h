@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <string>
 #include <iostream>
@@ -11,23 +11,23 @@ using namespace std;
 class DnsConfig {
 public:
 	DnsConfig();
-	//# ½«accessKeyId¸Ä³É×Ô¼ºµÄaccessKeyId
+	//# å°†accessKeyIdæ”¹æˆè‡ªå·±çš„accessKeyId
 	string AccessKeyId;
-	//# ½«accessSecret¸Ä³É×Ô¼ºµÄaccessSecret
+	//# å°†accessSecretæ”¹æˆè‡ªå·±çš„accessSecret
 	string AccessSecret;
-	//# ÊÇ·ñ¿ªÆôipv4 ddns½âÎö,1Îª¿ªÆô£¬0Îª¹Ø±Õ
+	//# æ˜¯å¦å¼€å¯ipv4 ddnsè§£æ,1ä¸ºå¼€å¯ï¼Œ0ä¸ºå…³é—­
 	int Ipv4Flag;
-	//# ÊÇ·ñ¿ªÆôipv6 ddns½âÎö,1Îª¿ªÆô£¬0Îª¹Ø±Õ
+	//# æ˜¯å¦å¼€å¯ipv6 ddnsè§£æ,1ä¸ºå¼€å¯ï¼Œ0ä¸ºå…³é—­
 	int	Ipv6Flag;
-	//# ÄãµÄÖ÷ÓòÃû
+	//# ä½ çš„ä¸»åŸŸå
 	string Domain;
-	//# Òª½øĞĞipv4 ddns½âÎöµÄ×ÓÓòÃû
+	//# è¦è¿›è¡Œipv4 ddnsè§£æçš„å­åŸŸå
 	string	NameIpv4;
-	//# Òª½øĞĞipv6 ddns½âÎöµÄ×ÓÓòÃû
+	//# è¦è¿›è¡Œipv6 ddnsè§£æçš„å­åŸŸå
 	string	NameIpv6;
-	//# ÈÕÖ¾Í¬Ê±Êä³öµ½ÎÄ¼ş,1Îª¿ªÆô£¬0Îª¹Ø±Õ
+	//# æ—¥å¿—åŒæ—¶è¾“å‡ºåˆ°æ–‡ä»¶,1ä¸ºå¼€å¯ï¼Œ0ä¸ºå…³é—­
 	//int	LogFileFlag;
-	//# Ì½²â±¾»ú¹«¹²ipµÄ·şÎñÆ÷,¿ÉÒÔ²»ÅäÖÃ,ÓĞÄÚ²¿Ä¬ÈÏÖµ,Ä¬ÈÏ·şÎñÆ÷¹ÒÁË,¿ÉÒÔÉèÖÃĞÂµÄ·şÎñÆ÷
+	//# æ¢æµ‹æœ¬æœºå…¬å…±ipçš„æœåŠ¡å™¨,å¯ä»¥ä¸é…ç½®,æœ‰å†…éƒ¨é»˜è®¤å€¼,é»˜è®¤æœåŠ¡å™¨æŒ‚äº†,å¯ä»¥è®¾ç½®æ–°çš„æœåŠ¡å™¨
 	string Ip4Url; //= https://api-ipv4.ip.sb/ip
 	int Ip4FasterFlag = 0;
 

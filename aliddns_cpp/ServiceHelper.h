@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 #include <string>
@@ -17,7 +17,7 @@ public:
 
 public:
 	/*
-	* °Ñ±¾³ÌĞò°²×°Îª·şÎñ
+	* æŠŠæœ¬ç¨‹åºå®‰è£…ä¸ºæœåŠ¡
 	*/
 	int InstallService();
 	int DeleteService();

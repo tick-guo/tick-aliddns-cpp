@@ -1,4 +1,4 @@
-//#include "httplib.h"
+ï»¿//#include "httplib.h"
 #include <iostream>
 #include "DnsOp.h"
 #include <Windows.h>
@@ -56,24 +56,24 @@ static size_t curl_callback(void* data, size_t size, size_t nmemb, void* clientp
 	return realsize;
 }
 /*
-* ¿ìËÙ,²»ĞèÒª·şÎñÆ÷·µ»Øip
-¿ÉÒÔ¿ìËÙ»ñÈ¡µ½Á¬½ÓIP,µ«ÊÇ²¢²»ÊÇ·şÎñÆ÷¸ĞÖªµ½µÄ¹«ÍøIP, Ö»ÊÇ±¾»ú¾ÖÓòÍøIP
-±¾»úÓĞ¹«Íøipv6¾Í±È½Ï×¼È·ÓĞĞ§
-±¾»úÊÇ¾ÖÓòÍøipv4,Ôò»ñÈ¡µÄÊÇ±¾»ú¾ÖÓòÍøipv4
+* å¿«é€Ÿ,ä¸éœ€è¦æœåŠ¡å™¨è¿”å›ip
+å¯ä»¥å¿«é€Ÿè·å–åˆ°è¿æ¥IP,ä½†æ˜¯å¹¶ä¸æ˜¯æœåŠ¡å™¨æ„ŸçŸ¥åˆ°çš„å…¬ç½‘IP, åªæ˜¯æœ¬æœºå±€åŸŸç½‘IP
+æœ¬æœºæœ‰å…¬ç½‘ipv6å°±æ¯”è¾ƒå‡†ç¡®æœ‰æ•ˆ
+æœ¬æœºæ˜¯å±€åŸŸç½‘ipv4,åˆ™è·å–çš„æ˜¯æœ¬æœºå±€åŸŸç½‘ipv4
 */
 string getPublicIpFaster(string& url, IpType type) {
 	auto time = get_boot_millisecond();
 	string ret_ip;
 	string ip_type_string = "auto";
 
-	//¿ÉÒÔ»ñÈ¡µ½Á¬½ÓIP,µ«ÊÇ²¢²»ÊÇ·şÎñÆ÷¸ĞÖªµ½µÄ¹«ÍøIP, Ö»ÊÇ±¾»ú¾ÖÓòÍøIP
+	//å¯ä»¥è·å–åˆ°è¿æ¥IP,ä½†æ˜¯å¹¶ä¸æ˜¯æœåŠ¡å™¨æ„ŸçŸ¥åˆ°çš„å…¬ç½‘IP, åªæ˜¯æœ¬æœºå±€åŸŸç½‘IP
 	CURL* curl = curl_easy_init();
 	char* ip = NULL;;
 
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_USERAGENT, ChromeUserAgent.c_str());
-	curl_easy_setopt(curl, CURLOPT_CONNECT_ONLY, 1L);//½öÁ¬½Ó,²»´«ÊäÊı¾İ
-	//Ë«Õ»ÓòÃûÊ±,Ç¿ÖÆÊ¹ÓÃip4»òÕßip6Á¬½Ó, ÓĞĞ§
+	curl_easy_setopt(curl, CURLOPT_CONNECT_ONLY, 1L);//ä»…è¿æ¥,ä¸ä¼ è¾“æ•°æ®
+	//åŒæ ˆåŸŸåæ—¶,å¼ºåˆ¶ä½¿ç”¨ip4æˆ–è€…ip6è¿æ¥, æœ‰æ•ˆ
 	if (type == IpType::IP_V4) {
 		curl_easy_setopt(curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 		ip_type_string = "v4";
@@ -88,11 +88,11 @@ string getPublicIpFaster(string& url, IpType type) {
 	/* Check for errors */
 	if ((res == CURLE_OK) &&
 		!curl_easy_getinfo(curl, CURLINFO_LOCAL_IP, &ip) && ip) {
-		log_debug("Local IP%s: %s, ºÄÊ±:%lldms", ip_type_string.c_str(), ip, get_boot_millisecond() - time);
+		log_debug("Local IP%s: %s, è€—æ—¶:%lldms", ip_type_string.c_str(), ip, get_boot_millisecond() - time);
 		ret_ip = string(ip);
 	}
 	else {
-		log_info("Ê§°Ü:%s Ô­Òò:[err%d]%s , ºÄÊ±:%lldms", url.c_str(), res, curl_easy_strerror(res), get_boot_millisecond() - time);
+		log_info("å¤±è´¥:%s åŸå› :[err%d]%s , è€—æ—¶:%lldms", url.c_str(), res, curl_easy_strerror(res), get_boot_millisecond() - time);
 	}
 	/* always cleanup */
 	curl_easy_cleanup(curl);
@@ -101,7 +101,7 @@ string getPublicIpFaster(string& url, IpType type) {
 }
 
 /*
-×¼È·,µ«ÊÇ½ÏÂı, ĞèÒª·şÎñÆ÷·µ»Øip
+å‡†ç¡®,ä½†æ˜¯è¾ƒæ…¢, éœ€è¦æœåŠ¡å™¨è¿”å›ip
 */
 string getPublicIpLegacy(string& url, IpType type) {
 	string ip;
@@ -115,7 +115,7 @@ string getPublicIpLegacy(string& url, IpType type) {
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, curl_callback);
 	/* we pass our 'chunk' struct to the callback function */
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void*)&chunk);
-	//Ã¿´Î²Ù×÷×ÜÊ±¼ä²»³¬¹ı10s
+	//æ¯æ¬¡æ“ä½œæ€»æ—¶é—´ä¸è¶…è¿‡10s
 	curl_easy_setopt(curl, CURLOPT_TIMEOUT_MS, 10L * 1000L);
 
 	if (type == IpType::IP_V4) {
@@ -130,14 +130,14 @@ string getPublicIpLegacy(string& url, IpType type) {
 	time = get_boot_millisecond() - time;
 	/* Check for errors */
 	if (res != CURLE_OK) {
-		log_info("Ê§°Ü:%s Ô­Òò:[err%d]%s , ºÄÊ±:%lldms", url.c_str(), res, curl_easy_strerror(res), time);
+		log_info("å¤±è´¥:%s åŸå› :[err%d]%s , è€—æ—¶:%lldms", url.c_str(), res, curl_easy_strerror(res), time);
 	}
 	else {
 		if (time > 3000) {
-			log_info("¾¯¸æ ³É¹¦:%s, µ«ºÄÊ±½Ï³¤:%lldms", url.c_str(), time);
+			log_info("è­¦å‘Š æˆåŠŸ:%s, ä½†è€—æ—¶è¾ƒé•¿:%lldms", url.c_str(), time);
 		}
 		else {
-			log_debug("³É¹¦:%s, ºÄÊ±:%lldms", url.c_str(), time);
+			log_debug("æˆåŠŸ:%s, è€—æ—¶:%lldms", url.c_str(), time);
 		}
 	}
 	/* always cleanup */
@@ -146,7 +146,7 @@ string getPublicIpLegacy(string& url, IpType type) {
 		ip = string(chunk.response);
 		ip = string_remove_blank(ip);
 	}
-	log_debug("»ñµÃip:%s", ip.c_str());
+	log_debug("è·å¾—ip:%s", ip.c_str());
 	return ip;
 }
 
@@ -166,13 +166,13 @@ void DnsOp::thread_function()
 	long long index = 0;
 	int updateCahche = 1;
 	int timeInterval = dnsConfig.timeInterval;
-	log_info("¿ªÊ¼³ÖĞø¼ì²âIP±ä»¯,¼ì²âÊ±¼ä¼ä¸ô:%ds", timeInterval);
+	log_info("å¼€å§‹æŒç»­æ£€æµ‹IPå˜åŒ–,æ£€æµ‹æ—¶é—´é—´éš”:%ds", timeInterval);
 	while (!mStop) {
 		index++;
-		log_debug("¼ì²â´ÎÊı:%d", index);
-		//½µµÍHTTP APIµÄµ÷ÓÃ, Ö±½ÓÓÃ±¾µØ»º´æÅĞ¶Ï¸Ä±ä
+		log_debug("æ£€æµ‹æ¬¡æ•°:%d", index);
+		//é™ä½HTTP APIçš„è°ƒç”¨, ç›´æ¥ç”¨æœ¬åœ°ç¼“å­˜åˆ¤æ–­æ”¹å˜
 		if (updateCahche) {
-			log_info("¸üĞÂ»º´æ");
+			log_info("æ›´æ–°ç¼“å­˜");
 			ret = getRecords();
 			if (ret != 0) {
 				unique_lock<mutex> lock_on(mMutex);
@@ -188,11 +188,11 @@ void DnsOp::thread_function()
 		if (dnsConfig.Ipv4Flag) {
 			ipv4 = getPublicIp(dnsConfig.Ip4Url, IpType::IP_V4, dnsConfig.Ip4FasterFlag);
 			if (ipv4.empty()) {
-				log_info("ipv4»ñÈ¡Ê§°Ü");
+				log_info("ipv4è·å–å¤±è´¥");
 			}
 			else {
 				//todo update
-				//log_info("ipv4¸Ä±ä:%s", ipv4.c_str());
+				//log_info("ipv4æ”¹å˜:%s", ipv4.c_str());
 				string RecordId;
 				auto ret = getRecordIdByPR(dnsConfig.NameIpv4, ipv4, true, RecordId);
 				if (ret == IpStatus::IP_NOT_EXIST) {
@@ -207,18 +207,18 @@ void DnsOp::thread_function()
 
 				}
 				else {
-					log_info("Î´Öª·µ»ØÖµ%d", ret);
+					log_info("æœªçŸ¥è¿”å›å€¼%d", ret);
 				}
 			}
 		}
 		if (dnsConfig.Ipv6Flag) {
 			ipv6 = getPublicIp(dnsConfig.Ip6Url, IpType::IP_V6, dnsConfig.Ip4FasterFlag);
 			if (ipv6.empty()) {
-				log_info("ipv6»ñÈ¡Ê§°Ü");
+				log_info("ipv6è·å–å¤±è´¥");
 			}
 			else {
 				//todo update
-				//log_info("ipv6¸Ä±ä:%s", ipv6.c_str());
+				//log_info("ipv6æ”¹å˜:%s", ipv6.c_str());
 				string RecordId;
 				auto ret = getRecordIdByPR(dnsConfig.NameIpv6, ipv6, false, RecordId);
 				if (ret == IpStatus::IP_NOT_EXIST) {
@@ -233,7 +233,7 @@ void DnsOp::thread_function()
 
 				}
 				else {
-					log_info("Î´Öª·µ»ØÖµ%d", ret);
+					log_info("æœªçŸ¥è¿”å›å€¼%d", ret);
 				}
 			}
 		}
@@ -247,7 +247,7 @@ void DnsOp::thread_function()
 		}
 
 	}
-	log_info("ÒÑÍË³ö¼ì²â");
+	log_info("å·²é€€å‡ºæ£€æµ‹");
 }
 
 DnsOp::DnsOp()
@@ -257,7 +257,7 @@ DnsOp::DnsOp()
 	LoadConfig loadconfig;
 	dnsConfig = loadconfig.dnsConfig;
 
-	/* ÅäÖÃÊµÀı */
+	/* é…ç½®å®ä¾‹ */
 	ClientConfiguration configuration("cn-hangzhou");
 	g_client.reset(new AlidnsClient(dnsConfig.AccessKeyId, dnsConfig.AccessSecret, configuration));
 	pThread.reset(new thread(&DnsOp::thread_function, this));
@@ -265,7 +265,7 @@ DnsOp::DnsOp()
 
 DnsOp::~DnsOp()
 {
-	//log_info("Íê³ÉÎö¹¹");
+	//log_info("å®Œæˆææ„");
 }
 
 void DnsOp::debug()
@@ -287,7 +287,7 @@ int DnsOp::getRecords()
 
 	auto result = g_client->describeDomainRecords(request);
 	if (!result.isSuccess()) {
-		log_info("»ñÈ¡DNS½âÎöÁĞ±íÊ§°Ü: %s", result.error().errorCode().c_str());
+		log_info("è·å–DNSè§£æåˆ—è¡¨å¤±è´¥: %s", result.error().errorCode().c_str());
 		return -1;
 	}
 
@@ -316,16 +316,16 @@ IpStatus DnsOp::getRecordIdByPR(string PR, string ip, bool isV4, string& RecordI
 		{
 			RecordIdOut = mRecords[i].recordId;
 			if (mRecords[i].value == ip) {
-				log_debug("ipµØÖ·Ã»±ä:%s", ip.c_str());
+				log_debug("ipåœ°å€æ²¡å˜:%s", ip.c_str());
 				return IpStatus::IP_IS_SAME;
 			}
 			else {
-				//ĞŞ¸Ä
+				//ä¿®æ”¹
 				return IpStatus::IP_IS_CHANGE;
 			}
 		}
 	}
-	//Ìí¼Ó
+	//æ·»åŠ 
 	return IpStatus::IP_NOT_EXIST;
 }
 
@@ -337,7 +337,7 @@ int DnsOp::addDns(bool isV4, string ip) {
 		aType = "A";
 	}
 
-	log_info("Ìí¼Ó½âÎö: %s.%s", name.c_str(), dnsConfig.Domain.c_str());
+	log_info("æ·»åŠ è§£æ: %s.%s", name.c_str(), dnsConfig.Domain.c_str());
 
 	Model::AddDomainRecordRequest request;
 	request.setDomainName(dnsConfig.Domain);
@@ -347,11 +347,11 @@ int DnsOp::addDns(bool isV4, string ip) {
 
 	auto res = g_client->addDomainRecord(request);
 	if (res.isSuccess()) {
-		log_info("Ìí¼Ó½âÎö³É¹¦:%s", ip.c_str());
+		log_info("æ·»åŠ è§£ææˆåŠŸ:%s", ip.c_str());
 		return 0;
 	}
 	else {
-		log_info("Ìí¼Ó½âÎöÊ§°Ü:%s", res.error().errorCode().c_str());
+		log_info("æ·»åŠ è§£æå¤±è´¥:%s", res.error().errorCode().c_str());
 		return -1;
 	}
 }
@@ -364,7 +364,7 @@ int DnsOp::updateDns(bool isV4, string ip, string RecordId) {
 		aType = "A";
 	}
 
-	log_info("¸üĞÂ½âÎö: %s.%s", name.c_str(), dnsConfig.Domain.c_str());
+	log_info("æ›´æ–°è§£æ: %s.%s", name.c_str(), dnsConfig.Domain.c_str());
 	Model::UpdateDomainRecordRequest request;
 	request.setRecordId(RecordId);
 	request.setRR(name);
@@ -374,11 +374,11 @@ int DnsOp::updateDns(bool isV4, string ip, string RecordId) {
 	auto res = g_client->updateDomainRecord(request);
 
 	if (res.isSuccess()) {
-		log_info("¸üĞÂ½âÎö³É¹¦:%s", ip.c_str());
+		log_info("æ›´æ–°è§£ææˆåŠŸ:%s", ip.c_str());
 		return 0;
 	}
 	else {
-		log_info("¸üĞÂ½âÎöÊ§°Ü:%s", res.error().errorCode().c_str());
+		log_info("æ›´æ–°è§£æå¤±è´¥:%s", res.error().errorCode().c_str());
 		return -1;
 	}
 }
@@ -389,7 +389,7 @@ void DnsOp::WakeAndStop()
 		unique_lock<mutex> lock_on(mMutex);
 		mStop = 1;
 		mConditon.notify_all();
-		log_info("×¼±¸ÍË³ö");
+		log_info("å‡†å¤‡é€€å‡º");
 	}
 	pThread.get()->join();
 }
@@ -397,30 +397,30 @@ void DnsOp::WakeAndStop()
 
 int main_sample(int argc, char** argv)
 {
-	/* ³õÊ¼»¯ SDK */
+	/* åˆå§‹åŒ– SDK */
 	AlibabaCloud::InitializeSdk();
 
-	/* ÅäÖÃÊµÀı */
+	/* é…ç½®å®ä¾‹ */
 	ClientConfiguration configuration("cn-hangzhou");
 	AlidnsClient client("<your-access-key-id>", "<your-access-key-secret>", configuration);
 
-	/* ´´½¨APIÇëÇó²¢ÉèÖÃ²ÎÊı */
+	/* åˆ›å»ºAPIè¯·æ±‚å¹¶è®¾ç½®å‚æ•° */
 	Model::AddCustomLineRequest request;
 
-	/* ¸Ã²ÎÊıÖµÎª¼ÙÉèÖµ£¬ÇëÄú¸ù¾İÊµ¼ÊÇé¿ö½øĞĞÌîĞ´ */
+	/* è¯¥å‚æ•°å€¼ä¸ºå‡è®¾å€¼ï¼Œè¯·æ‚¨æ ¹æ®å®é™…æƒ…å†µè¿›è¡Œå¡«å†™ */
 	request.setLang("your_value");
 
-	/* ¸Ã²ÎÊıÖµÎª¼ÙÉèÖµ£¬ÇëÄú¸ù¾İÊµ¼ÊÇé¿ö½øĞĞÌîĞ´ */
+	/* è¯¥å‚æ•°å€¼ä¸ºå‡è®¾å€¼ï¼Œè¯·æ‚¨æ ¹æ®å®é™…æƒ…å†µè¿›è¡Œå¡«å†™ */
 	request.setDomainName("your_value");
 
-	/* ¸Ã²ÎÊıÖµÎª¼ÙÉèÖµ£¬ÇëÄú¸ù¾İÊµ¼ÊÇé¿ö½øĞĞÌîĞ´ */
+	/* è¯¥å‚æ•°å€¼ä¸ºå‡è®¾å€¼ï¼Œè¯·æ‚¨æ ¹æ®å®é™…æƒ…å†µè¿›è¡Œå¡«å†™ */
 	request.setLineName("your_value");
 
 
 	auto outcome = client.addCustomLine(request);
 	if (!outcome.isSuccess())
 	{
-		/* Òì³£´¦Àí */
+		/* å¼‚å¸¸å¤„ç† */
 		std::cout << outcome.error().errorCode() << std::endl;
 		AlibabaCloud::ShutdownSdk();
 		return(-1);
@@ -428,10 +428,10 @@ int main_sample(int argc, char** argv)
 
 	//std::cout << "totalCount: " << outcome.result().getTotalCount() << std::endl;
 
-	/* ´òÓ¡ÄúĞèÒªµÄ·µ»ØÖµ£¬´Ë´¦´òÓ¡µÄÊÇ´Ë´ÎÇëÇóµÄ RequestId */
+	/* æ‰“å°æ‚¨éœ€è¦çš„è¿”å›å€¼ï¼Œæ­¤å¤„æ‰“å°çš„æ˜¯æ­¤æ¬¡è¯·æ±‚çš„ RequestId */
 	//std::cout << outcome.getRequestId() << std::endl;
 
-	/* ¹Ø±Õ SDK */
+	/* å…³é—­ SDK */
 	AlibabaCloud::ShutdownSdk();
 	return(0);
 }
