@@ -176,57 +176,61 @@ static bool is_ipv4_valid(const string& ip) {
 	return in_num && num <= 255 && dots == 3;
 }
 
+static bool is_ipv6_group_valid(const string& group) {
+	if (group.empty() || group.size() > 4) return false;
+	for (char c : group) {
+		if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F')))
+			return false;
+	}
+	return true;
+}
+
 static bool is_ipv6_valid(const string& ip) {
 	if (ip.empty() || ip.size() > 45) return false;
-	int groups = 0;
-	int i = 0;
-	int len = (int)ip.size();
+
 	bool seen_double_colon = false;
-	bool last_was_double_colon = false;
+	int group_count = 0;
+	size_t i = 0;
+	const size_t len = ip.size();
 
 	while (i < len) {
 		if (ip[i] == ':') {
 			if (i + 1 < len && ip[i + 1] == ':') {
 				if (seen_double_colon) return false;
 				seen_double_colon = true;
-				groups++; // 双冒号算一组
 				i += 2;
-				last_was_double_colon = true;
-				// 双冒号后允许直接结束
 				if (i >= len) break;
 				continue;
 			}
-			else {
-				groups++;
-				i++;
-				last_was_double_colon = false;
-				// 单冒号后必须是十六进制组，不能直接是另一个单冒号（上面已处理）
-				// 末尾的冒号（如 ::1:）在下一轮会被拒绝
-				continue;
-			}
-		}
-		// 十六进制组
-		int hex_count = 0;
-		while (i < len && ip[i] != ':') {
-			char c = ip[i];
-			if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F')))
-				return false;
-			hex_count++;
-			if (hex_count > 4) return false;
+
+			// 单冒号后必须直接跟一个非空十六进制组。
 			i++;
+			if (i >= len) return false;
+			size_t j = i;
+			while (j < len && ip[j] != ':') {
+				j++;
+			}
+			string group = ip.substr(i, j - i);
+			if (!is_ipv6_group_valid(group)) return false;
+			group_count++;
+			i = j;
+			continue;
 		}
-		if (hex_count == 0) return false; // 空组（由单冒号分隔产生）
-		groups++;
-		last_was_double_colon = false;
+
+		size_t j = i;
+		while (j < len && ip[j] != ':') {
+			j++;
+		}
+		string group = ip.substr(i, j - i);
+		if (!is_ipv6_group_valid(group)) return false;
+		group_count++;
+		i = j;
 	}
 
-	// 校验组数：8组（无::）或 <=7组（有::）
 	if (!seen_double_colon) {
-		return groups == 8;
+		return group_count == 8;
 	}
-	else {
-		return groups >= 2 && groups <= 8;
-	}
+	return group_count <= 7;
 }
 
 bool check_ip_format(string ip, IpType type) {
