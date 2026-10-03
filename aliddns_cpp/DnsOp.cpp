@@ -1,4 +1,4 @@
-﻿//#include "httplib.h"
+﻿﻿//#include "httplib.h"
 #include <iostream>
 #include "DnsOp.h"
 #include <Windows.h>
@@ -150,8 +150,95 @@ string getPublicIpLegacy(string& url, IpType type) {
 	return ip;
 }
 
+static bool is_ipv4_valid(const string& ip) {
+	if (ip.empty() || ip.size() > 15) return false;
+	int dots = 0, num = 0;
+	bool in_num = false;
+	for (size_t i = 0; i < ip.size(); ++i) {
+		char c = ip[i];
+		if (c == '.') {
+			if (!in_num || num > 255) return false;
+			dots++;
+			if (dots > 3) return false;
+			num = 0;
+			in_num = false;
+		}
+		else if (c >= '0' && c <= '9') {
+			if (num > 255) return false; // 防止溢出
+			num = num * 10 + (c - '0');
+			in_num = true;
+		}
+		else {
+			return false;
+		}
+	}
+	return in_num && num <= 255 && dots == 3;
+}
+
+static bool is_ipv6_valid(const string& ip) {
+	if (ip.empty() || ip.size() > 45) return false;
+	int groups = 0;
+	int i = 0;
+	int len = (int)ip.size();
+	bool seen_double_colon = false;
+	bool last_was_double_colon = false;
+
+	while (i < len) {
+		if (ip[i] == ':') {
+			if (i + 1 < len && ip[i + 1] == ':') {
+				if (seen_double_colon) return false;
+				seen_double_colon = true;
+				groups++; // 双冒号算一组
+				i += 2;
+				last_was_double_colon = true;
+				// 双冒号后允许直接结束
+				if (i >= len) break;
+				continue;
+			}
+			else {
+				groups++;
+				i++;
+				last_was_double_colon = false;
+				// 单冒号后必须是十六进制组，不能直接是另一个单冒号（上面已处理）
+				// 末尾的冒号（如 ::1:）在下一轮会被拒绝
+				continue;
+			}
+		}
+		// 十六进制组
+		int hex_count = 0;
+		while (i < len && ip[i] != ':') {
+			char c = ip[i];
+			if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F')))
+				return false;
+			hex_count++;
+			if (hex_count > 4) return false;
+			i++;
+		}
+		if (hex_count == 0) return false; // 空组（由单冒号分隔产生）
+		groups++;
+		last_was_double_colon = false;
+	}
+
+	// 校验组数：8组（无::）或 <=7组（有::）
+	if (!seen_double_colon) {
+		return groups == 8;
+	}
+	else {
+		return groups >= 2 && groups <= 8;
+	}
+}
+
 bool check_ip_format(string ip, IpType type) {
-	return true;
+	if (ip.empty()) return false;
+	if (type == IpType::IP_V4) {
+		return is_ipv4_valid(ip);
+	}
+	else if (type == IpType::IP_V6) {
+		return is_ipv6_valid(ip);
+	}
+	else { // IP_AUTO: 接受 v4 或 v6
+		return is_ipv4_valid(ip) || is_ipv6_valid(ip);
+	}
 }
 
 string getPublicIp(string& url, IpType type, int fasterFlag = 0 ) {
