@@ -150,12 +150,25 @@ string getPublicIpLegacy(string& url, IpType type) {
 	return ip;
 }
 
+bool check_ip_format(string ip, IpType type) {
+	return true;
+}
+
 string getPublicIp(string& url, IpType type, int fasterFlag = 0 ) {
+	string ip;
 	if (fasterFlag) {
-		return getPublicIpFaster(url, type);
+		ip = getPublicIpFaster(url, type);
 	}
 	else {
-		return getPublicIpLegacy(url, type);
+		ip = getPublicIpLegacy(url, type);
+	}
+	log_info("获得ip的原始信息: %s", ip.c_str());
+	if (check_ip_format(ip, type)) {
+		return ip;
+	}
+	else {
+		log_info("ip格式校验失败");
+		return string("");
 	}
 }
 
@@ -212,7 +225,7 @@ void DnsOp::thread_function()
 			}
 		}
 		if (dnsConfig.Ipv6Flag) {
-			ipv6 = getPublicIp(dnsConfig.Ip6Url, IpType::IP_V6, dnsConfig.Ip4FasterFlag);
+			ipv6 = getPublicIp(dnsConfig.Ip6Url, IpType::IP_V6, dnsConfig.Ip6FasterFlag);
 			if (ipv6.empty()) {
 				log_info("ipv6获取失败");
 			}
@@ -365,6 +378,7 @@ int DnsOp::updateDns(bool isV4, string ip, string RecordId) {
 	}
 
 	log_info("更新解析: %s.%s", name.c_str(), dnsConfig.Domain.c_str());
+	log_info("更新IP:%s", ip.c_str());
 	Model::UpdateDomainRecordRequest request;
 	request.setRecordId(RecordId);
 	request.setRR(name);
