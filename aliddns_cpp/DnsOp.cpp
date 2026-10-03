@@ -254,7 +254,7 @@ string getPublicIp(string& url, IpType type, int fasterFlag = 0 ) {
 	else {
 		ip = getPublicIpLegacy(url, type);
 	}
-	log_info("获得ip的原始信息: %s", ip.c_str());
+	log_debug("获得ip的原始信息: %s", ip.c_str());
 	if (check_ip_format(ip, type)) {
 		return ip;
 	}

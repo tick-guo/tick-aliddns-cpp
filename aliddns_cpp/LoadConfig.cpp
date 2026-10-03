@@ -25,11 +25,11 @@ DnsConfig::DnsConfig()
 	AccessSecret = "AccessSecret";
 	Ipv4Flag = 1;
 	Ipv6Flag = 1;
-	Domain = "baise.tk";
+	Domain = "xxxx.com";
 	NameIpv4 = "tb4";
 	NameIpv6 = "tb6";
-	Ip4Url = "http://4.ipw.cn";
-	Ip6Url = "http://api6.ipify.org";
+	Ip4Url = "https://ipinfo.io/ip"; // 2026/10/03 update
+	Ip6Url = "https://v6.ipinfo.io/ip";
 	timeInterval = 30;
 	LogLevel = 0;
 
